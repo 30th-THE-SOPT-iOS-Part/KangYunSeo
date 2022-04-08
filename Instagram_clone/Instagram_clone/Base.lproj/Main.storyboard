@@ -123,7 +123,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZAC-0P-Yb1"/>
                     <connections>
-                        <outlet property="messageLabel" destination="N5C-iN-pDo" id="Ke6-GX-MzX"/>
+                        <outlet property="userIdTextField" destination="aGn-gh-6c5" id="NnK-nc-aIx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1sr-uu-r1K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -172,6 +172,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fvg-SC-oMY"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="khJ-ts-uFE" id="dVl-00-47H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y3i-LD-7La" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

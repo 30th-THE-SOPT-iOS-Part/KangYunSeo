@@ -9,20 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var userId : String?
     
     @IBOutlet weak var idTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func signinButton(_ sender: Any) {
-        guard let signinVC = self.storyboard?.instantiateViewController(withIdentifier: "finishViewController") else {return}
+        guard let signinVC = self.storyboard?.instantiateViewController(withIdentifier: "finishViewController") as? finishViewController else {return}
         signinVC.modalPresentationStyle = .fullScreen
 
+        //로그인 시 userId 데이터 전달
+        signinVC.name = idTextField.text
+        
         self.present(signinVC, animated: true, completion: nil)
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

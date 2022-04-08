@@ -8,15 +8,25 @@
 import UIKit
 
 class finishViewController: UIViewController {
-
+    
+    
+    var name: String?
+    
+    @IBOutlet weak var finishLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setFinishLabel()
         // Do any additional setup after loading the view.
     }
     
-
-    @IBOutlet weak var finishLabel: UILabel!
+    private func setFinishLabel() {
+        if let name = name {
+            finishLabel.text = "\(name)님 Instagram에 오신 것을 환영합니다."
+            finishLabel.sizeToFit()
+        }
+    }
     
     @IBAction func finishButton(_ sender: Any) {
         //네비게이션 사용 시 화면 전환

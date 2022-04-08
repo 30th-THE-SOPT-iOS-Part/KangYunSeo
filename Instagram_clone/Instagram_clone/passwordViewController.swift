@@ -8,7 +8,11 @@
 import UIKit
 
 class passwordViewController: UIViewController {
-
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    var userId: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,17 +21,10 @@ class passwordViewController: UIViewController {
     
 
     @IBAction func loginButton(_ sender: Any) {
-        guard let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "finishViewController") else {return}
+        guard let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "finishViewController") as? finishViewController else {return}
         self.navigationController?.pushViewController(loginVC, animated: true)
+        
+        loginVC.name = userId
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
