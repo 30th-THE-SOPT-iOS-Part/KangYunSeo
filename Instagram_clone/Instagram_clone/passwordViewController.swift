@@ -18,7 +18,7 @@ class passwordViewController: UIViewController {
 
     @IBAction func loginButton(_ sender: Any) {
         guard let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "finishViewController") else {return}
-        loginVC.navigationController?.pushViewController(loginVC, animated: true)
+        self.navigationController?.pushViewController(loginVC, animated: true)
     }
     /*
     // MARK: - Navigation

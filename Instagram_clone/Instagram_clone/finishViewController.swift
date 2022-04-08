@@ -16,17 +16,15 @@ class finishViewController: UIViewController {
     }
     
 
+    @IBOutlet weak var finishLabel: UILabel!
+    
     @IBAction func finishButton(_ sender: Any) {
+        //네비게이션 사용 시 화면 전환
+        self.navigationController?.popToRootViewController(animated: true)
+        //모달 사용 시 화면 전환
         self.dismiss(animated: true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
+//++ dismiss와 presentingViewController.dismiss 차이 알아보기

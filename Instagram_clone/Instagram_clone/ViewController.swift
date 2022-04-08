@@ -9,6 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var userId : String?
+    
+    @IBOutlet weak var idTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func signinButton(_ sender: Any) {
         guard let signinVC = self.storyboard?.instantiateViewController(withIdentifier: "finishViewController") else {return}
@@ -26,10 +31,10 @@ class ViewController: UIViewController {
 
 
     @IBAction func signupButton(_ sender: Any) {
-//        네비게이션 구현 미완
-        guard let signupVC = self.storyboard?.instantiateViewController(withIdentifier: "userNameViewController") else {return}
-
-        self.navigationController?.pushViewController(signupVC, animated: true)
+//        navigation controller 만들어야 작동
+        guard let signupVC = self.storyboard?.instantiateViewController(withIdentifier: "userNameViewController") as? userNameViewController else { return }
+        
+       self.navigationController?.pushViewController(signupVC, animated: true)
     }
 }
 
