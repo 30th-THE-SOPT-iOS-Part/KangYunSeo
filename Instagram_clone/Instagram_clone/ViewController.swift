@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        setEnableButton()
+        setEnableButton()
     }
     
     @IBAction func signinButton(_ sender: Any) {
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     }
     
 //    private func setEnableButton() {
-//        if (idTextField.hasText && passwordTextField.hasText) == true {
+//        if (idTextField.hasText && passwordTextField.hasText) {
 //            loginButton.isEnabled = true
 //        }
 //        else {

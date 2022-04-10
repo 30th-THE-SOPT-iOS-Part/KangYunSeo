@@ -42,16 +42,4 @@ class passwordViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
 
-    
-
-    
-//    private func setButtonEnable() {
-//        if passwordTextField.state.isEmpty == true {
-//            loginButton.isEnabled = false
-//        }
-//        else {
-//            loginButton.isEnabled = true
-//        }
-
-
 }
