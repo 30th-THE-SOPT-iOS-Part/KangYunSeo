@@ -25,6 +25,7 @@ class finishViewController: UIViewController {
         if let name = name {
             finishLabel.text = "\(name)님 Instagram에 오신 것을 환영합니다."
             finishLabel.sizeToFit()
+            finishLabel.textAlignment = .center
         }
     }
     

@@ -25,6 +25,12 @@ class passwordViewController: UIViewController {
         self.navigationController?.pushViewController(loginVC, animated: true)
         
         loginVC.name = userId
+        
     }
+    
+    @IBOutlet weak var loginButton: UIButton!
+
+    
+    
 
 }
