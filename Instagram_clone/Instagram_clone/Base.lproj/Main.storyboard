@@ -66,6 +66,15 @@
                                 <rect key="frame" x="93" y="122" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjD-Rq-BYK">
+                                <rect key="frame" x="340" y="358" width="44" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="passwordShownEye"/>
+                                <connections>
+                                    <action selector="passwordHideButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OTm-Mi-ahZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -73,6 +82,8 @@
                     <navigationItem key="navigationItem" id="vcY-Pk-Y3X"/>
                     <connections>
                         <outlet property="idTextField" destination="hTs-E6-aUG" id="SgA-n7-m0y"/>
+                        <outlet property="loginButton" destination="9C7-QH-a5h" id="uZC-47-bcI"/>
+                        <outlet property="passwordHideButton" destination="cjD-Rq-BYK" id="SR1-r7-vgV"/>
                         <outlet property="passwordTextField" destination="5lX-oa-HEY" id="fqH-lY-rza"/>
                     </connections>
                 </viewController>
@@ -152,7 +163,7 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="khJ-ts-uFE">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="khJ-ts-uFE">
                                 <rect key="frame" x="30" y="240" width="354" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -168,6 +179,16 @@
                                     <action selector="loginButton:" destination="WYX-KT-yaM" eventType="touchUpInside" id="Hxe-z0-ulf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFh-qK-yka">
+                                <rect key="frame" x="340" y="240" width="44" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="passwordShownEye"/>
+                                <connections>
+                                    <action selector="passwordHideButton:" destination="WYX-KT-yaM" eventType="touchUpInside" id="Ljx-w2-eVy"/>
+                                    <action selector="passwordHideButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yv4-0R-LfU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XQg-2z-VTg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -175,6 +196,7 @@
                     <navigationItem key="navigationItem" id="Fvg-SC-oMY"/>
                     <connections>
                         <outlet property="loginButton" destination="hP6-IM-9gA" id="iVu-sI-AWs"/>
+                        <outlet property="passwordHideButton" destination="GFh-qK-yka" id="cPa-ac-WpO"/>
                         <outlet property="passwordTextField" destination="khJ-ts-uFE" id="dVl-00-47H"/>
                     </connections>
                 </viewController>
@@ -246,6 +268,7 @@
     </scenes>
     <resources>
         <image name="Instargram_logo" width="175" height="50"/>
+        <image name="passwordShownEye" width="20" height="20"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
