@@ -19,8 +19,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="PdN-Ey-0aZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vMu-PP-bfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="wt8-4N-nag" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="wt8-4N-nag" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M1P-9f-Rht">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -35,6 +34,7 @@
                         <segue destination="Qnt-ta-Y03" kind="relationship" relationship="viewControllers" id="iFM-nn-Cjf"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMu-PP-bfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-446" y="-283"/>
         </scene>

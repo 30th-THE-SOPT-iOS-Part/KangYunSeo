@@ -55,11 +55,6 @@ class ViewController: UIViewController {
             passwordHideButton.setImage(UIImage(named: "passwordShownEye"), for: .normal)
             passwordTextField.isSecureTextEntry = true
         }
-
-        // clear 버튼 처럼 작성 시에만 보이게 하고 싶은데 왜 안되는지 모르겠음
-        //
-        passwordTextField.hasText
-
     }
   
 //    // 오류는 안나지만 작동도 안됨
