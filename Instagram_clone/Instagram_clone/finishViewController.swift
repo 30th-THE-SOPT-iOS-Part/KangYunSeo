@@ -30,6 +30,11 @@ class finishViewController: UIViewController {
     }
     
     @IBAction func finishButton(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func anotherLoginButton(_ sender: Any) {
         //네비게이션 사용 시 화면 전환
         self.navigationController?.popToRootViewController(animated: true)
         //모달 사용 시 화면 전환

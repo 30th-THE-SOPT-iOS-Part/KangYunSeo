@@ -18,10 +18,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var passwordHideButton: UIButton!
     
+    // 메모리에 올라가는 순간 한 번만 실행되는 코드, UI초기화 같은게 들어감
+    
+    // addTarget -> action
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setEnableButton()
+//        setEnableButton()
     }
     
     @IBAction func signinButton(_ sender: Any) {
@@ -46,13 +49,20 @@ class ViewController: UIViewController {
         if passwordTextField.isSecureTextEntry {
             passwordHideButton.setImage(UIImage(named: "passwordHideEye"), for: .normal)
             passwordTextField.isSecureTextEntry = false
+            
         }
         else {
             passwordHideButton.setImage(UIImage(named: "passwordShownEye"), for: .normal)
             passwordTextField.isSecureTextEntry = true
         }
+
+        // clear 버튼 처럼 작성 시에만 보이게 하고 싶은데 왜 안되는지 모르겠음
+        //
+        passwordTextField.hasText
+
     }
-    
+  
+//    // 오류는 안나지만 작동도 안됨
 //    private func setEnableButton() {
 //        if (idTextField.hasText && passwordTextField.hasText) {
 //            loginButton.isEnabled = true

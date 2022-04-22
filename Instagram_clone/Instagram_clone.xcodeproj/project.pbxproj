@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BABE3672812D65D00A82DB6 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BABE3662812D65D00A82DB6 /* TabBar.storyboard */; };
+		3BABE36A2812DC1800A82DB6 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BABE3692812DC1800A82DB6 /* HomeTab.storyboard */; };
+		3BABE36D2812DC6100A82DB6 /* SearchTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BABE36C2812DC6100A82DB6 /* SearchTab.storyboard */; };
+		3BABE3702812DC9A00A82DB6 /* ReelsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BABE36F2812DC9A00A82DB6 /* ReelsTab.storyboard */; };
+		3BABE3732812DCD300A82DB6 /* ShopTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BABE3722812DCD300A82DB6 /* ShopTab.storyboard */; };
+		3BABE3762812DCFA00A82DB6 /* ProfileTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BABE3752812DCFA00A82DB6 /* ProfileTab.storyboard */; };
 		3BC8107F27FF5D2E00EB384F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8107E27FF5D2E00EB384F /* AppDelegate.swift */; };
 		3BC8108127FF5D2E00EB384F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8108027FF5D2E00EB384F /* SceneDelegate.swift */; };
 		3BC8108327FF5D2E00EB384F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8108227FF5D2E00EB384F /* ViewController.swift */; };
@@ -19,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BABE3662812D65D00A82DB6 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		3BABE3692812DC1800A82DB6 /* HomeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
+		3BABE36C2812DC6100A82DB6 /* SearchTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchTab.storyboard; sourceTree = "<group>"; };
+		3BABE36F2812DC9A00A82DB6 /* ReelsTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReelsTab.storyboard; sourceTree = "<group>"; };
+		3BABE3722812DCD300A82DB6 /* ShopTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopTab.storyboard; sourceTree = "<group>"; };
+		3BABE3752812DCFA00A82DB6 /* ProfileTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileTab.storyboard; sourceTree = "<group>"; };
 		3BC8107B27FF5D2E00EB384F /* Instagram_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC8107E27FF5D2E00EB384F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BC8108027FF5D2E00EB384F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +55,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BABE3682812DC0B00A82DB6 /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				3BABE3692812DC1800A82DB6 /* HomeTab.storyboard */,
+			);
+			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		3BABE36B2812DC4A00A82DB6 /* SearchTab */ = {
+			isa = PBXGroup;
+			children = (
+				3BABE36C2812DC6100A82DB6 /* SearchTab.storyboard */,
+			);
+			path = SearchTab;
+			sourceTree = "<group>";
+		};
+		3BABE36E2812DC8C00A82DB6 /* ReelsTab */ = {
+			isa = PBXGroup;
+			children = (
+				3BABE36F2812DC9A00A82DB6 /* ReelsTab.storyboard */,
+			);
+			path = ReelsTab;
+			sourceTree = "<group>";
+		};
+		3BABE3712812DCC100A82DB6 /* ShopTab */ = {
+			isa = PBXGroup;
+			children = (
+				3BABE3722812DCD300A82DB6 /* ShopTab.storyboard */,
+			);
+			path = ShopTab;
+			sourceTree = "<group>";
+		};
+		3BABE3742812DCF000A82DB6 /* ProfileTab */ = {
+			isa = PBXGroup;
+			children = (
+				3BABE3752812DCFA00A82DB6 /* ProfileTab.storyboard */,
+			);
+			path = ProfileTab;
+			sourceTree = "<group>";
+		};
 		3BC8107227FF5D2E00EB384F = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +114,7 @@
 		3BC8107D27FF5D2E00EB384F /* Instagram_clone */ = {
 			isa = PBXGroup;
 			children = (
+				3BD278D92812D53600FA710B /* TabBar */,
 				3BC8107E27FF5D2E00EB384F /* AppDelegate.swift */,
 				3BC8108027FF5D2E00EB384F /* SceneDelegate.swift */,
 				3BC8108227FF5D2E00EB384F /* ViewController.swift */,
@@ -74,6 +127,19 @@
 				3BC810982800894C00EB384F /* finishViewController.swift */,
 			);
 			path = Instagram_clone;
+			sourceTree = "<group>";
+		};
+		3BD278D92812D53600FA710B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3BABE3742812DCF000A82DB6 /* ProfileTab */,
+				3BABE3712812DCC100A82DB6 /* ShopTab */,
+				3BABE36E2812DC8C00A82DB6 /* ReelsTab */,
+				3BABE36B2812DC4A00A82DB6 /* SearchTab */,
+				3BABE3682812DC0B00A82DB6 /* HomeTab */,
+				3BABE3662812D65D00A82DB6 /* TabBar.storyboard */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +200,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BABE3672812D65D00A82DB6 /* TabBar.storyboard in Resources */,
 				3BC8108B27FF5D3000EB384F /* LaunchScreen.storyboard in Resources */,
+				3BABE3732812DCD300A82DB6 /* ShopTab.storyboard in Resources */,
+				3BABE3762812DCFA00A82DB6 /* ProfileTab.storyboard in Resources */,
+				3BABE36D2812DC6100A82DB6 /* SearchTab.storyboard in Resources */,
+				3BABE36A2812DC1800A82DB6 /* HomeTab.storyboard in Resources */,
 				3BC8108827FF5D3000EB384F /* Assets.xcassets in Resources */,
 				3BC8108627FF5D2E00EB384F /* Main.storyboard in Resources */,
+				3BABE3702812DC9A00A82DB6 /* ReelsTab.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +371,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 665TA4D5B9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instagram_clone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -326,6 +399,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 665TA4D5B9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instagram_clone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
