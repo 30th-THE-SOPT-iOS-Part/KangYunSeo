@@ -23,8 +23,23 @@ class ViewController: UIViewController {
     // addTarget -> action
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginButton.isEnabled = false
         
-//        setEnableButton()
+        idTextField.addTarget(self, action: #selector(btnEnable), for: .editingChanged)
+        
+        passwordTextField.addTarget(self, action: #selector(btnEnable), for: .editingChanged)
+        
+        
+    }
+    
+    
+                              
+    @objc func btnEnable() {
+        if idTextField.text?.isEmpty == false && passwordTextField.text?.isEmpty == false {
+            loginButton.isEnabled = true
+        } else {
+            loginButton.isEnabled = false
+        }
     }
     
     @IBAction func signinButton(_ sender: Any) {
@@ -58,14 +73,7 @@ class ViewController: UIViewController {
     }
   
 //    // 오류는 안나지만 작동도 안됨
-//    private func setEnableButton() {
-//        if (idTextField.hasText && passwordTextField.hasText) {
-//            loginButton.isEnabled = true
-//        }
-//        else {
-//            loginButton.isEnabled = false
-//        }
-//    }
+
     
     
 }

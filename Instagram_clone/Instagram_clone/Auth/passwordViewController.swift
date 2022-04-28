@@ -13,12 +13,24 @@ class passwordViewController: UIViewController {
     
     @IBOutlet weak var passwordHideButton: UIButton!
     
+    @IBOutlet weak var loginButton: UIButton!
+    
     var userId: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loginButton.isEnabled = false
 
-        // Do any additional setup after loading the view.
+        passwordTextField.addTarget(self, action: #selector(btnEnable), for: .editingChanged)
+    }
+    
+    @objc func btnEnable() {
+        if passwordTextField.text?.isEmpty == false {
+            loginButton.isEnabled = true
+        } else {
+            loginButton.isEnabled = false
+        }
     }
     
     @IBAction func passwordHideButton(_ sender: Any) {
@@ -40,6 +52,6 @@ class passwordViewController: UIViewController {
         
     }
     
-    @IBOutlet weak var loginButton: UIButton!
+    
 
 }

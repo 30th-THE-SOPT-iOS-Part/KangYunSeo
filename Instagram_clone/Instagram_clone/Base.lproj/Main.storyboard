@@ -12,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Instagram_clone" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -43,8 +43,8 @@
                                     <action selector="passwordHideButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OTm-Mi-ahZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 잊으셨나요?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4b-MO-xlZ">
-                                <rect key="frame" x="16" y="461.5" width="141" height="13.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="비밀번호를 잊으셨나요?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4b-MO-xlZ">
+                                <rect key="frame" x="16" y="462" width="195" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
@@ -102,7 +102,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="eld-3t-STg" secondAttribute="trailing" constant="103.5" id="mkR-WI-Aaa"/>
                             <constraint firstItem="hTs-E6-aUG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pQM-al-ERS"/>
                             <constraint firstItem="T4b-MO-xlZ" firstAttribute="top" secondItem="5lX-oa-HEY" secondAttribute="bottom" constant="16" id="qWn-g3-Ygn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cjD-Rq-BYK" secondAttribute="bottom" constant="468" id="vHX-6b-GbN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T4b-MO-xlZ" secondAttribute="trailing" constant="257" id="vwY-b4-x8O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9C7-QH-a5h" secondAttribute="trailing" constant="16" id="wZw-Xs-Di7"/>
                             <constraint firstItem="T4b-MO-xlZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xI3-ur-kme"/>
@@ -182,6 +181,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZAC-0P-Yb1"/>
                     <connections>
+                        <outlet property="nextButton" destination="1v2-6S-cXc" id="732-we-v7U"/>
                         <outlet property="userIdTextField" destination="aGn-gh-6c5" id="NnK-nc-aIx"/>
                     </connections>
                 </viewController>
