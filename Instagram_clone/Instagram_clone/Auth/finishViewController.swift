@@ -18,7 +18,8 @@ class finishViewController: UIViewController {
         super.viewDidLoad()
         
         setFinishLabel()
-        // Do any additional setup after loading the view.
+        self.finishLabel.sizeToFit()
+        
     }
     
     private func setFinishLabel() {
@@ -33,7 +34,7 @@ class finishViewController: UIViewController {
         let storyboard = UIStoryboard(name: "TabBar", bundle: Bundle.main)
         guard let nextVC = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController else {return}
                 self.present(nextVC, animated: true, completion: nil)
-        nextVC.modalPresentationStyle = .fullScreen
+        nextVC.modalPresentationStyle = .overFullScreen
     }
     
     
