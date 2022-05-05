@@ -125,6 +125,15 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentLabel" destination="9kj-ju-3AO" id="XKo-hr-9ey"/>
+                <outlet property="feedContentLabel" destination="fpi-Fd-sXQ" id="ZHX-L7-c4T"/>
+                <outlet property="feedImage" destination="s0N-Xj-1xq" id="PKs-OC-cfd"/>
+                <outlet property="likeLabel" destination="aPX-aq-8vL" id="4FD-E5-OlQ"/>
+                <outlet property="userImage" destination="hZ9-dG-KdV" id="OUU-5A-B8G"/>
+                <outlet property="userNameFeedLabel" destination="kug-0L-qNj" id="Sdn-ly-7ab"/>
+                <outlet property="userNameTitleLabel" destination="Pfm-dC-xwL" id="PH3-6w-6DF"/>
+            </connections>
             <point key="canvasLocation" x="138.40579710144928" y="101.78571428571428"/>
         </tableViewCell>
     </objects>
