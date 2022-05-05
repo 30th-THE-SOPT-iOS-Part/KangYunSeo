@@ -17,18 +17,31 @@ class homeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let nib = UINib(nibName: StoryCollectionViewCell.identifier, bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: StoryCollectionViewCell.identifier)
+        registerNib()
+        
+        // collection view 스크롤 방향 설정
+        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .horizontal
+        }
+        
+    }
+    
+    private func registerNib() {
+        let storyNib = UINib(nibName: StoryCollectionViewCell.identifier, bundle: nil)
+        collectionView.register(storyNib, forCellWithReuseIdentifier: StoryCollectionViewCell.identifier)
         
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            layout.scrollDirection = .horizontal
-        }
+        let feedNib = UINib(nibName: TableViewCell.identifier, bundle: nil)
+        tableView.register(feedNib, forCellReuseIdentifier: TableViewCell.identifier)
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 }
 
+// storyCollectionView extension
 extension homeViewController: UICollectionViewDelegate {
     
 }
@@ -66,5 +79,25 @@ extension homeViewController: UICollectionViewDelegateFlowLayout{
     // cell 좌우간격
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 4
+    }
+}
+
+//feedTableView extension
+extension homeViewController: UITableViewDelegate {
+}
+
+extension homeViewController: UITableViewDataSource {
+    // section마다 몇 개의 행을 넣어야 하는지 지정
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return FeedDataModel.sampleData.count
+    }
+    
+    // 어떤 셀을 꺼내와서 보여줄지 지정하고, 셀에 어떻게 데이터를 담아줄지 정해주는 함수
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for: indexPath) as? TableViewCell else { return UITableViewCell() }
+        
+        cell.setData(FeedDataModel.sampleData[indexPath.row])
+        
+        return cell
     }
 }
