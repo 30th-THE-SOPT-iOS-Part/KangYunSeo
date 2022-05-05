@@ -96,12 +96,20 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fqe-fL-lEv">
+                                <rect key="frame" x="0.0" y="163" width="414" height="650"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="fqe-fL-lEv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="2Ng-t2-gjL"/>
                             <constraint firstItem="hwd-9n-Tbd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="AO6-Mz-DxD"/>
+                            <constraint firstItem="fqe-fL-lEv" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="Bg4-FZ-IkN"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hwd-9n-Tbd" secondAttribute="trailing" id="CJ8-C2-KJK"/>
+                            <constraint firstItem="fqe-fL-lEv" firstAttribute="top" secondItem="hwd-9n-Tbd" secondAttribute="bottom" constant="3" id="E0V-2g-Bju"/>
+                            <constraint firstItem="fqe-fL-lEv" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Kvf-aR-Gyu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Tac-7v-fQz" secondAttribute="trailing" id="TeZ-W3-ro7"/>
                             <constraint firstItem="Tac-7v-fQz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="U3T-tZ-Ad8"/>
                             <constraint firstItem="hwd-9n-Tbd" firstAttribute="top" secondItem="Tac-7v-fQz" secondAttribute="bottom" id="oBX-c9-WWZ"/>
@@ -112,6 +120,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="hwd-9n-Tbd" id="dCw-uv-5ZQ"/>
+                        <outlet property="tableView" destination="fqe-fL-lEv" id="fXV-wm-MkS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

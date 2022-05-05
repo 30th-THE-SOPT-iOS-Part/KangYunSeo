@@ -26,6 +26,8 @@
 		3BCE681628243E4F00CE7082 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE681428243E4F00CE7082 /* StoryCollectionViewCell.swift */; };
 		3BCE681728243E4F00CE7082 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BCE681528243E4F00CE7082 /* StoryCollectionViewCell.xib */; };
 		3BCE68192824401300CE7082 /* StoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE68182824401300CE7082 /* StoryDataModel.swift */; };
+		3BCE681C28244F8E00CE7082 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE681A28244F8E00CE7082 /* TableViewCell.swift */; };
+		3BCE681D28244F8E00CE7082 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BCE681B28244F8E00CE7082 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		3BCE681428243E4F00CE7082 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BCE681528243E4F00CE7082 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		3BCE68182824401300CE7082 /* StoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataModel.swift; sourceTree = "<group>"; };
+		3BCE681A28244F8E00CE7082 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3BCE681B28244F8E00CE7082 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,8 @@
 		3BCE6809282433FD00CE7082 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				3BCE681A28244F8E00CE7082 /* TableViewCell.swift */,
+				3BCE681B28244F8E00CE7082 /* TableViewCell.xib */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BABE3672812D65D00A82DB6 /* TabBar.storyboard in Resources */,
+				3BCE681D28244F8E00CE7082 /* TableViewCell.xib in Resources */,
 				3BC8108B27FF5D3000EB384F /* LaunchScreen.storyboard in Resources */,
 				3BABE3732812DCD300A82DB6 /* ShopTab.storyboard in Resources */,
 				3BABE3762812DCFA00A82DB6 /* ProfileTab.storyboard in Resources */,
@@ -261,6 +268,7 @@
 				3BC8108327FF5D2E00EB384F /* ViewController.swift in Sources */,
 				3BC810992800894C00EB384F /* finishViewController.swift in Sources */,
 				3BC8107F27FF5D2E00EB384F /* AppDelegate.swift in Sources */,
+				3BCE681C28244F8E00CE7082 /* TableViewCell.swift in Sources */,
 				3BC810952800891D00EB384F /* userNameViewController.swift in Sources */,
 				3BC8108127FF5D2E00EB384F /* SceneDelegate.swift in Sources */,
 				3BC810972800894100EB384F /* passwordViewController.swift in Sources */,
