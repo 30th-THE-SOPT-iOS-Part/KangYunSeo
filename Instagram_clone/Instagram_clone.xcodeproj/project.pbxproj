@@ -22,6 +22,10 @@
 		3BC810952800891D00EB384F /* userNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC810942800891D00EB384F /* userNameViewController.swift */; };
 		3BC810972800894100EB384F /* passwordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC810962800894100EB384F /* passwordViewController.swift */; };
 		3BC810992800894C00EB384F /* finishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC810982800894C00EB384F /* finishViewController.swift */; };
+		3BCE680728241FFA00CE7082 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE680628241FFA00CE7082 /* homeViewController.swift */; };
+		3BCE681628243E4F00CE7082 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE681428243E4F00CE7082 /* StoryCollectionViewCell.swift */; };
+		3BCE681728243E4F00CE7082 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BCE681528243E4F00CE7082 /* StoryCollectionViewCell.xib */; };
+		3BCE68192824401300CE7082 /* StoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE68182824401300CE7082 /* StoryDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		3BC810942800891D00EB384F /* userNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userNameViewController.swift; sourceTree = "<group>"; };
 		3BC810962800894100EB384F /* passwordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = passwordViewController.swift; sourceTree = "<group>"; };
 		3BC810982800894C00EB384F /* finishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finishViewController.swift; sourceTree = "<group>"; };
+		3BCE680628241FFA00CE7082 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		3BCE681428243E4F00CE7082 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BCE681528243E4F00CE7082 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		3BCE68182824401300CE7082 /* StoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,10 @@
 		3BABE3682812DC0B00A82DB6 /* HomeTab */ = {
 			isa = PBXGroup;
 			children = (
+				3BCE6809282433FD00CE7082 /* TableView */,
+				3BCE6808282433F200CE7082 /* CollectionView */,
 				3BABE3692812DC1800A82DB6 /* HomeTab.storyboard */,
+				3BCE680628241FFA00CE7082 /* homeViewController.swift */,
 			);
 			path = HomeTab;
 			sourceTree = "<group>";
@@ -135,6 +146,23 @@
 				3BC8108C27FF5D3000EB384F /* Info.plist */,
 			);
 			path = Instagram_clone;
+			sourceTree = "<group>";
+		};
+		3BCE6808282433F200CE7082 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3BCE681428243E4F00CE7082 /* StoryCollectionViewCell.swift */,
+				3BCE681528243E4F00CE7082 /* StoryCollectionViewCell.xib */,
+				3BCE68182824401300CE7082 /* StoryDataModel.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		3BCE6809282433FD00CE7082 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		3BD278D92812D53600FA710B /* TabBar */ = {
@@ -214,6 +242,7 @@
 				3BABE3762812DCFA00A82DB6 /* ProfileTab.storyboard in Resources */,
 				3BABE36D2812DC6100A82DB6 /* SearchTab.storyboard in Resources */,
 				3BABE36A2812DC1800A82DB6 /* HomeTab.storyboard in Resources */,
+				3BCE681728243E4F00CE7082 /* StoryCollectionViewCell.xib in Resources */,
 				3BC8108827FF5D3000EB384F /* Assets.xcassets in Resources */,
 				3BC8108627FF5D2E00EB384F /* Main.storyboard in Resources */,
 				3BABE3702812DC9A00A82DB6 /* ReelsTab.storyboard in Resources */,
@@ -227,12 +256,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BCE681628243E4F00CE7082 /* StoryCollectionViewCell.swift in Sources */,
+				3BCE680728241FFA00CE7082 /* homeViewController.swift in Sources */,
 				3BC8108327FF5D2E00EB384F /* ViewController.swift in Sources */,
 				3BC810992800894C00EB384F /* finishViewController.swift in Sources */,
 				3BC8107F27FF5D2E00EB384F /* AppDelegate.swift in Sources */,
 				3BC810952800891D00EB384F /* userNameViewController.swift in Sources */,
 				3BC8108127FF5D2E00EB384F /* SceneDelegate.swift in Sources */,
 				3BC810972800894100EB384F /* passwordViewController.swift in Sources */,
+				3BCE68192824401300CE7082 /* StoryDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
