@@ -17,6 +17,7 @@
 		3B8F9DD82826E52700630B06 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F9DD72826E52700630B06 /* APIConstants.swift */; };
 		3B8F9DE22826F8F000630B06 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F9DE12826F8F000630B06 /* NetworkResult.swift */; };
 		3B8F9DE42826FDFB00630B06 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F9DE32826FDFB00630B06 /* LoginModel.swift */; };
+		3B8F9DE62826FE5F00630B06 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F9DE52826FE5F00630B06 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		3B8F9DD72826E52700630B06 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		3B8F9DE12826F8F000630B06 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		3B8F9DE32826FDFB00630B06 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		3B8F9DE52826FE5F00630B06 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		E93F27F1EB14DCA2EFFF8BB7 /* Pods_4th_seminar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_4th_seminar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 		3B8F9DDE2826E85000630B06 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3B8F9DE52826FE5F00630B06 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8F9DE62826FE5F00630B06 /* UserService.swift in Sources */,
 				3B8F9DD82826E52700630B06 /* APIConstants.swift in Sources */,
 				3B8F9DE42826FDFB00630B06 /* LoginModel.swift in Sources */,
 				3B8F9DE22826F8F000630B06 /* NetworkResult.swift in Sources */,
