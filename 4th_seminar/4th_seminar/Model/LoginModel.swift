@@ -5,10 +5,9 @@
 //  Created by 강윤서 on 2022/05/08.
 //
 
-
-// 서버 통신 결과로 받는 응답 바디(response body)를 디코딩할 데이터 모델
 import Foundation
 
+// 서버 통신 결과로 받는 응답 바디(response body)를 디코딩할 데이터 모델
 struct LoginResponse: Codable {
     let status: Int
     let success: Bool?
