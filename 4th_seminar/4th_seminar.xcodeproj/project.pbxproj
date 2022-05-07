@@ -15,6 +15,7 @@
 		3B1D0F982826D6A90081E48D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1D0F972826D6A90081E48D /* Assets.xcassets */; };
 		3B1D0F9B2826D6A90081E48D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1D0F992826D6A90081E48D /* LaunchScreen.storyboard */; };
 		3B8F9DD82826E52700630B06 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F9DD72826E52700630B06 /* APIConstants.swift */; };
+		3B8F9DE22826F8F000630B06 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F9DE12826F8F000630B06 /* NetworkResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		3B1D0F9A2826D6A90081E48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B1D0F9C2826D6A90081E48D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B8F9DD72826E52700630B06 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		3B8F9DE12826F8F000630B06 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		E93F27F1EB14DCA2EFFF8BB7 /* Pods_4th_seminar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_4th_seminar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				3B8F9DD72826E52700630B06 /* APIConstants.swift */,
+				3B8F9DE12826F8F000630B06 /* NetworkResult.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B8F9DD82826E52700630B06 /* APIConstants.swift in Sources */,
+				3B8F9DE22826F8F000630B06 /* NetworkResult.swift in Sources */,
 				3B1D0F932826D6A90081E48D /* ViewController.swift in Sources */,
 				3B1D0F8F2826D6A90081E48D /* AppDelegate.swift in Sources */,
 				3B1D0F912826D6A90081E48D /* SceneDelegate.swift in Sources */,
