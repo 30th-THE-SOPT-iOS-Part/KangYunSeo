@@ -62,6 +62,9 @@
                                         <rect key="frame" x="0.0" y="415.5" width="356" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="로그인"/>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IpT-ve-w02"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

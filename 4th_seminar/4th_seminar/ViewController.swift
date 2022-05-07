@@ -18,6 +18,24 @@ class ViewController: UIViewController {
     }
 
     
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        login()
+    }
+}
 
+extension ViewController {
+    func login() {
+        guard let name = nameTextField.text else {return}
+        guard let email = emailTextField.text else {return}
+        guard let password = passwordTextField.text else {return}
+        
+        UserService.shared.login(name: name, email: email, password: password) { response in switch response {
+        case .success(let data):
+            guard let data = data as? LoginResponse else {return}
+            print(data)
+        default:
+            return
+        }}
+    }
 }
 
