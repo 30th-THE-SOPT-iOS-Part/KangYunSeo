@@ -72,7 +72,7 @@
                                     <constraint firstAttribute="trailing" secondItem="txO-4o-Pjf" secondAttribute="trailing" constant="14" id="oa7-C7-ShO"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hwd-9n-Tbd">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hwd-9n-Tbd">
                                 <rect key="frame" x="0.0" y="88" width="414" height="72"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
