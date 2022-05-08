@@ -29,6 +29,7 @@ extension ViewController {
         guard let email = emailTextField.text else {return}
         guard let password = passwordTextField.text else {return}
         
+        // resopnse에 네트워크 결과가 담겨 있음
         UserService.shared.login(name: name, email: email, password: password) { response in switch response {
         case .success(let data):
             guard let data = data as? LoginResponse else {return}

@@ -80,6 +80,7 @@ class UserService {
     
     // 성공 시 넘겨받은 데이터를 decode하는 함수입니다.
     // 이 때 우리가 codable을 채택해서 만들어 놓은 구조체 형식의 데이터 모델을 사용합니다.
+    // decodeData - from : json data를 LoginResponse(정의한 swift type으로 decode)
     private func isVaildData(data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(LoginResponse.self, from: data)
