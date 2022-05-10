@@ -50,6 +50,8 @@ class ViewController: UIViewController {
         signinVC.name = idTextField.text
         
         self.present(signinVC, animated: true, completion: nil)
+        
+//        login()
     }
 
 
@@ -71,10 +73,26 @@ class ViewController: UIViewController {
             passwordTextField.isSecureTextEntry = true
         }
     }
-  
-//    // 오류는 안나지만 작동도 안됨
-
-    
-    
 }
+//
+//extension ViewController {
+//    func login() {
+//        let name = "THE SOPT - iOS"
+//        guard let email = idTextField.text else { return }
+//        guard let passowrd = passwordTextField.text else { return }
+//
+//        UserService.shared.login(name: name,
+//                                 email: email,
+//                                 password: passowrd) { response in
+//            switch response {
+//            case .success(let data):
+//                guard let data = data as? LoginResponse else { return }
+//                print("data: ", data)
+//            default:
+//                return
+//            }
+//
+//        }
+//    }
+//}
 
