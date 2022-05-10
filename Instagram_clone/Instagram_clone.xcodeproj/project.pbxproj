@@ -17,6 +17,7 @@
 		3BB5CD19282ACB25000CFE83 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB5CD18282ACB25000CFE83 /* NetworkResult.swift */; };
 		3BB5CD1C282ACCEF000CFE83 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB5CD1B282ACCEF000CFE83 /* LoginModel.swift */; };
 		3BB5CD1E282ACF03000CFE83 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB5CD1D282ACF03000CFE83 /* SignupModel.swift */; };
+		3BB5CD21282AD005000CFE83 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB5CD20282AD005000CFE83 /* UserService.swift */; };
 		3BC8107F27FF5D2E00EB384F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8107E27FF5D2E00EB384F /* AppDelegate.swift */; };
 		3BC8108127FF5D2E00EB384F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8108027FF5D2E00EB384F /* SceneDelegate.swift */; };
 		3BC8108327FF5D2E00EB384F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8108227FF5D2E00EB384F /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		3BB5CD18282ACB25000CFE83 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		3BB5CD1B282ACCEF000CFE83 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		3BB5CD1D282ACF03000CFE83 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
+		3BB5CD20282AD005000CFE83 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		3BC8107B27FF5D2E00EB384F /* Instagram_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC8107E27FF5D2E00EB384F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BC8108027FF5D2E00EB384F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3BB5CD1F282ACFFA000CFE83 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3BB5CD20282AD005000CFE83 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		3BC8107227FF5D2E00EB384F = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +192,7 @@
 		3BC8107D27FF5D2E00EB384F /* Instagram_clone */ = {
 			isa = PBXGroup;
 			children = (
+				3BB5CD1F282ACFFA000CFE83 /* Service */,
 				3BB5CD1A282ACCD6000CFE83 /* Model */,
 				3BB5CD15282ACA09000CFE83 /* Network */,
 				3BABE3772812E51900A82DB6 /* Auth */,
@@ -374,6 +385,7 @@
 				3BC810952800891D00EB384F /* userNameViewController.swift in Sources */,
 				3BB5CD17282ACA17000CFE83 /* APIConstants.swift in Sources */,
 				3BB5CD1E282ACF03000CFE83 /* SignupModel.swift in Sources */,
+				3BB5CD21282AD005000CFE83 /* UserService.swift in Sources */,
 				3BC8108127FF5D2E00EB384F /* SceneDelegate.swift in Sources */,
 				3BC810972800894100EB384F /* passwordViewController.swift in Sources */,
 				3BCE68192824401300CE7082 /* StoryDataModel.swift in Sources */,
