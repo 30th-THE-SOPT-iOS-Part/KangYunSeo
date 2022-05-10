@@ -28,10 +28,20 @@ class ViewController: UIViewController {
         idTextField.addTarget(self, action: #selector(btnEnable), for: .editingChanged)
         
         passwordTextField.addTarget(self, action: #selector(btnEnable), for: .editingChanged)
-        
-        
     }
     
+    // MARK: - 생명주기 함수
+    // dismiss 후 textField에 입력해준 값이 남아있는 문제 해결
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        resetTextField()
+    }
+    
+    // textField 초기화하는 메서드
+    private func resetTextField() {
+        idTextField.text?.removeAll()
+        passwordTextField.text?.removeAll()
+    }
     
                               
     @objc func btnEnable() {
