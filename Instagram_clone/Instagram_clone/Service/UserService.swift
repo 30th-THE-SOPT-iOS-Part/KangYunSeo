@@ -27,6 +27,7 @@ class UserService {
         
         let dataReqeust = AF.request(url,
                                      method: .post,
+                                     parameters: body,
                                      encoding: JSONEncoding.default,
                                      headers: header)
         
