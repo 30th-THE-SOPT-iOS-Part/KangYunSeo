@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    //MARK: - @IBOutlet
     @IBOutlet weak var idTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
@@ -52,16 +52,16 @@ class ViewController: UIViewController {
         }
     }
     
+    //MARK: - @IBAction
     @IBAction func signinButton(_ sender: Any) {
-        guard let signinVC = self.storyboard?.instantiateViewController(withIdentifier: "finishViewController") as? finishViewController else {return}
-        signinVC.modalPresentationStyle = .fullScreen
-
-        //로그인 시 userId 데이터 전달
-        signinVC.name = idTextField.text
-        
-        self.present(signinVC, animated: true, completion: nil)
-        
-//        login()
+//        guard let signinVC = self.storyboard?.instantiateViewController(withIdentifier: "finishViewController") as? finishViewController else {return}
+//        signinVC.modalPresentationStyle = .fullScreen
+//
+//        //로그인 시 userId 데이터 전달
+//        signinVC.name = idTextField.text
+//
+//        self.present(signinVC, animated: true, completion: nil)
+        login()
     }
 
 
@@ -84,25 +84,31 @@ class ViewController: UIViewController {
         }
     }
 }
-//
-//extension ViewController {
-//    func login() {
-//        let name = "THE SOPT - iOS"
-//        guard let email = idTextField.text else { return }
-//        guard let passowrd = passwordTextField.text else { return }
-//
-//        UserService.shared.login(name: name,
-//                                 email: email,
-//                                 password: passowrd) { response in
-//            switch response {
-//            case .success(let data):
-//                guard let data = data as? LoginResponse else { return }
-//                print("data: ", data)
-//            default:
-//                return
-//            }
-//
-//        }
-//    }
-//}
 
+extension ViewController {
+    func login() {
+        guard let email = idTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        AuthService.shared.login(
+            email: email,
+            password: password) { response in
+                switch response {
+                case .success(let data):
+                    guard let data = data as? LoginResponse else { return }
+                    print(data)
+                default:
+                    self.alert(message: "로그인 실패")
+                }
+                
+            }
+        
+    }
+    
+    func alert(message: String) {
+         let alertVC = UIAlertController(title: message, message: nil, preferredStyle: .alert)
+         let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+         alertVC.addAction(okAction)
+         present(alertVC, animated: true)
+     }
+}

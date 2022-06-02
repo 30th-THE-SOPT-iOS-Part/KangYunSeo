@@ -9,13 +9,16 @@ import UIKit
 
 class passwordViewController: UIViewController {
     
+    //MARK: - IBOutlet
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var passwordHideButton: UIButton!
     
     @IBOutlet weak var loginButton: UIButton!
     
+    //MARK: - Properties
     var userId: String?
+    var password: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,9 +52,28 @@ class passwordViewController: UIViewController {
         self.navigationController?.pushViewController(loginVC, animated: true)
         
         loginVC.name = userId
+        loginVC.password = passwordTextField.text
+        
+        signup()
         
     }
-    
-    
+}
 
+extension passwordViewController {
+    func signup() {
+        guard let name = userId else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        AuthService.shared.signup(name: name,
+                                  email: name,
+                                  password: password) { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? SignupResponse else { return }
+                print(data)
+            default:
+                return
+            }
+        }
+    }
 }
