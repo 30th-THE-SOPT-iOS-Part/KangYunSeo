@@ -33,6 +33,8 @@ class DelegatePracticeVC: UIViewController, DelegatePracticeSecondVCDelegate {
         //네비게이션 연결
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "DelegatePracticeSecondVC") as? DelegatePracticeSecondVC else { return }
         
+        nextVC.delegate = self
+        
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
