@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIT-Pa-JEi">
-                                <rect key="frame" x="157" y="431" width="100" height="34"/>
+                                <rect key="frame" x="107" y="431" width="200" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="ZC0-Rz-th1"/>
+                                    <constraint firstAttribute="width" constant="200" id="yTC-jB-Tha"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -70,9 +70,39 @@
                     <view key="view" contentMode="scaleToFill" id="zEv-U1-q3B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Bz-2l-m2t">
+                                <rect key="frame" x="107" y="304" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="t8k-K4-XOQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaV-3a-HQG">
+                                <rect key="frame" x="147" y="568" width="120" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="7oA-Ke-kRg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="sendDataBtnDidTap:" destination="dmw-Bh-AfX" eventType="touchUpInside" id="ux8-NJ-pLV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8m0-eD-ded"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xaV-3a-HQG" firstAttribute="top" secondItem="7Bz-2l-m2t" secondAttribute="bottom" constant="230" id="5hs-gY-1Qd"/>
+                            <constraint firstItem="xaV-3a-HQG" firstAttribute="centerX" secondItem="zEv-U1-q3B" secondAttribute="centerX" id="7va-BH-ebh"/>
+                            <constraint firstItem="7Bz-2l-m2t" firstAttribute="centerX" secondItem="zEv-U1-q3B" secondAttribute="centerX" id="Oh2-PT-FaE"/>
+                            <constraint firstItem="7Bz-2l-m2t" firstAttribute="top" secondItem="8m0-eD-ded" secondAttribute="top" constant="260" id="uqT-hw-ECU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dataTextField" destination="7Bz-2l-m2t" id="axp-6R-hFj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bY5-49-gho" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,9 +128,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

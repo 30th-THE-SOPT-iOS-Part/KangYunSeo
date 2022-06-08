@@ -11,9 +11,19 @@ class DelegatePracticeSecondVC: UIViewController {
 
     //MARK: - Vars & Lets Part
     
+    
+    //MARK: - UIComponent Part
+    
+    @IBOutlet weak var dataTextField: UITextField!
+    
+    
     //MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    //MARK: - IBAction Part
+    @IBAction func sendDataBtnDidTap(_ sender: Any) {
+    }
+    
 }
