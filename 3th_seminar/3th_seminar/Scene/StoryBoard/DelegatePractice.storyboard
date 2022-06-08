@@ -11,7 +11,7 @@
         <!--Delegate PracticeVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DelegatePracticeVC" customModule="_th_seminar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DelegatePracticeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DelegatePracticeVC" customModule="_th_seminar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,7 +66,7 @@
         <!--Delegate Practice SecondVC-->
         <scene sceneID="M50-kE-aIm">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="dmw-Bh-AfX" customClass="DelegatePracticeSecondVC" customModule="_th_seminar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DelegatePracticeSecondVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dmw-Bh-AfX" customClass="DelegatePracticeSecondVC" customModule="_th_seminar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zEv-U1-q3B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -26,7 +26,10 @@ class DelegatePracticeVC: UIViewController {
     //MARK: - IBAction Part
     
     @IBAction func nextBtnDidTap(_ sender: Any) {
+        //네비게이션 연결
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "DelegatePracticeSecondVC") as? DelegatePracticeSecondVC else { return }
         
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
 }
