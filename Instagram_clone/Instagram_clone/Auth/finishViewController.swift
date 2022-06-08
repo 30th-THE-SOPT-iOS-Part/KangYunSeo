@@ -37,7 +37,7 @@ class finishViewController: UIViewController {
 //
 //        nextVC.modalPresentationStyle = .fullScreen
 //        self.present(nextVC, animated: true, completion: nil)
-        signUp()
+        //signUp()
     }
     
     
