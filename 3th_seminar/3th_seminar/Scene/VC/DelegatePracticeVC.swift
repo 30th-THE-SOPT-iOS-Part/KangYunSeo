@@ -8,6 +8,10 @@
 import UIKit
 
 class DelegatePracticeVC: UIViewController, DelegatePracticeSecondVCDelegate {
+    func sendData(data: String) {
+        delegateLabel.text = data
+    }
+    
 
     //MARK: - Vars & Lets
     
