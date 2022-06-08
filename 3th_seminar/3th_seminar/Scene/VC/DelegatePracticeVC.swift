@@ -13,6 +13,7 @@ class DelegatePracticeVC: UIViewController {
     
     //MARK: - UI Component Part
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var delegateLabel: UILabel!
     
     //MARK: - Life Cycle Part
     override func viewDidLoad() {
@@ -20,6 +21,12 @@ class DelegatePracticeVC: UIViewController {
         // textField의 일 중에서 일부를 self(즉, DelegatePracticeVC)로 위임해주어야 함
         textField.delegate = self
 
+    }
+    
+    //MARK: - IBAction Part
+    
+    @IBAction func nextBtnDidTap(_ sender: Any) {
+        
     }
     
 }
