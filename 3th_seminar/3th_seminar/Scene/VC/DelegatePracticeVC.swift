@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DelegatePracticeVC: UIViewController {
+class DelegatePracticeVC: UIViewController, DelegatePracticeSecondVCDelegate {
 
     //MARK: - Vars & Lets
     
