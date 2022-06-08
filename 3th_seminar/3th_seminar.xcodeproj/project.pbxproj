@@ -16,6 +16,7 @@
 		3BD13E542850C7B2000B022F /* ScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E532850C7B2000B022F /* ScrollVC.swift */; };
 		3BD13E582850E284000B022F /* DelegatePractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD13E572850E284000B022F /* DelegatePractice.storyboard */; };
 		3BD13E5A2850E2A5000B022F /* DelegatePracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E592850E2A5000B022F /* DelegatePracticeVC.swift */; };
+		3BD13E5C28510934000B022F /* DelegatePracticeSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E5B28510934000B022F /* DelegatePracticeSecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3BD13E532850C7B2000B022F /* ScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVC.swift; sourceTree = "<group>"; };
 		3BD13E572850E284000B022F /* DelegatePractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DelegatePractice.storyboard; sourceTree = "<group>"; };
 		3BD13E592850E2A5000B022F /* DelegatePracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePracticeVC.swift; sourceTree = "<group>"; };
+		3BD13E5B28510934000B022F /* DelegatePracticeSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePracticeSecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				3BD13E3C2850C617000B022F /* ViewController.swift */,
 				3BD13E532850C7B2000B022F /* ScrollVC.swift */,
 				3BD13E592850E2A5000B022F /* DelegatePracticeVC.swift */,
+				3BD13E5B28510934000B022F /* DelegatePracticeSecondVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BD13E5C28510934000B022F /* DelegatePracticeSecondVC.swift in Sources */,
 				3BD13E3D2850C617000B022F /* ViewController.swift in Sources */,
 				3BD13E542850C7B2000B022F /* ScrollVC.swift in Sources */,
 				3BD13E5A2850E2A5000B022F /* DelegatePracticeVC.swift in Sources */,
