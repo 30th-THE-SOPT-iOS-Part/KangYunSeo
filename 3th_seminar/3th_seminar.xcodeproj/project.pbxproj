@@ -14,6 +14,8 @@
 		3BD13E422850C619000B022F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD13E412850C619000B022F /* Assets.xcassets */; };
 		3BD13E4E2850C6DE000B022F /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD13E4D2850C6DE000B022F /* ScrollView.storyboard */; };
 		3BD13E542850C7B2000B022F /* ScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E532850C7B2000B022F /* ScrollVC.swift */; };
+		3BD13E582850E284000B022F /* DelegatePractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD13E572850E284000B022F /* DelegatePractice.storyboard */; };
+		3BD13E5A2850E2A5000B022F /* DelegatePracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E592850E2A5000B022F /* DelegatePracticeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		3BD13E462850C619000B022F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BD13E4D2850C6DE000B022F /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
 		3BD13E532850C7B2000B022F /* ScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVC.swift; sourceTree = "<group>"; };
+		3BD13E572850E284000B022F /* DelegatePractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DelegatePractice.storyboard; sourceTree = "<group>"; };
+		3BD13E592850E2A5000B022F /* DelegatePracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePracticeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			children = (
 				3BD13E3C2850C617000B022F /* ViewController.swift */,
 				3BD13E532850C7B2000B022F /* ScrollVC.swift */,
+				3BD13E592850E2A5000B022F /* DelegatePracticeVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 			children = (
 				3BD13E4D2850C6DE000B022F /* ScrollView.storyboard */,
 				3BD13E3E2850C617000B022F /* Main.storyboard */,
+				3BD13E572850E284000B022F /* DelegatePractice.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BD13E582850E284000B022F /* DelegatePractice.storyboard in Resources */,
 				3BD13E422850C619000B022F /* Assets.xcassets in Resources */,
 				3BD13E4E2850C6DE000B022F /* ScrollView.storyboard in Resources */,
 				3BD13E402850C617000B022F /* Main.storyboard in Resources */,
@@ -183,6 +190,7 @@
 			files = (
 				3BD13E3D2850C617000B022F /* ViewController.swift in Sources */,
 				3BD13E542850C7B2000B022F /* ScrollVC.swift in Sources */,
+				3BD13E5A2850E2A5000B022F /* DelegatePracticeVC.swift in Sources */,
 				3BD13E392850C617000B022F /* AppDelegate.swift in Sources */,
 				3BD13E3B2850C617000B022F /* SceneDelegate.swift in Sources */,
 			);
