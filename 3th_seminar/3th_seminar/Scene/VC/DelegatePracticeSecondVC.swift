@@ -31,6 +31,12 @@ class DelegatePracticeSecondVC: UIViewController {
     
     //MARK: - IBAction Part
     @IBAction func sendDataBtnDidTap(_ sender: Any) {
+        //프로토콜에서 선언한 함수 원형 구현
+        if let text = dataTextField.text {
+            delegate?.sendData(data: text)
+        }
+        //delegate 처리가 끝난 후 pop
+        self.navigationController?.popViewController(animated: true)
     }
     
 }
