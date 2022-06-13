@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BCE651D285785A2007427EE /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCE651C285785A2007427EE /* TableView.storyboard */; };
 		3BD13E392850C617000B022F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E382850C617000B022F /* AppDelegate.swift */; };
 		3BD13E3B2850C617000B022F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E3A2850C617000B022F /* SceneDelegate.swift */; };
 		3BD13E3D2850C617000B022F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E3C2850C617000B022F /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BCE651C285785A2007427EE /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
 		3BD13E352850C617000B022F /* 3th_seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3th_seminar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD13E382850C617000B022F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BD13E3A2850C617000B022F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				3BD13E4D2850C6DE000B022F /* ScrollView.storyboard */,
 				3BD13E3E2850C617000B022F /* Main.storyboard */,
 				3BD13E572850E284000B022F /* DelegatePractice.storyboard */,
+				3BCE651C285785A2007427EE /* TableView.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			files = (
 				3BD13E582850E284000B022F /* DelegatePractice.storyboard in Resources */,
 				3BD13E422850C619000B022F /* Assets.xcassets in Resources */,
+				3BCE651D285785A2007427EE /* TableView.storyboard in Resources */,
 				3BD13E4E2850C6DE000B022F /* ScrollView.storyboard in Resources */,
 				3BD13E402850C617000B022F /* Main.storyboard in Resources */,
 			);
