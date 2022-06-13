@@ -9,15 +9,22 @@ import UIKit
 
 class TableViewTVC: UITableViewCell {
 
+    //MARK: - Vars & Lets Part
+    
+    //MARK: - UIComponent Part
+    @IBOutlet weak var albumCoverImage: UIImageView!
+    @IBOutlet weak var musicTitleLabel: UILabel!
+    @IBOutlet weak var musicDescriptionLabel: UILabel!
+    @IBOutlet weak var moveButton: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
-    
 }

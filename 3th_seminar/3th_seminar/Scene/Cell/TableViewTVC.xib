@@ -12,7 +12,7 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TableViewTVC" customModule="_th_seminar" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="TableViewTVC" customModule="_th_seminar" customModuleProvider="target">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -56,6 +56,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" red="0.082352941176470587" green="0.14901960784313725" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="albumCoverImage" destination="AA9-ns-6Eq" id="FT2-be-hI6"/>
+                <outlet property="moveButton" destination="oAN-bg-CFx" id="q6Y-eP-eiJ"/>
+                <outlet property="musicDescriptionLabel" destination="QPZ-gu-JAi" id="3ac-Z9-jeQ"/>
+                <outlet property="musicTitleLabel" destination="mAK-gx-Jbr" id="0yg-L0-tpb"/>
+            </connections>
             <point key="canvasLocation" x="138.40579710144928" y="96.428571428571431"/>
         </tableViewCell>
     </objects>
