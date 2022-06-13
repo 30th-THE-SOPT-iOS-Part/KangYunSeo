@@ -35,7 +35,7 @@
                         <color key="textColor" red="0.78823529411764703" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oAN-bg-CFx">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_menu" translatesAutoresizingMaskIntoConstraints="NO" id="oAN-bg-CFx">
                         <rect key="frame" x="339" y="33" width="24" height="24"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="24" id="HHv-Mb-wDf"/>
@@ -65,4 +65,7 @@
             <point key="canvasLocation" x="138.40579710144928" y="96.428571428571431"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="icn_menu" width="17" height="9"/>
+    </resources>
 </document>
