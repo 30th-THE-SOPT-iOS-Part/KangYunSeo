@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3BCE651D285785A2007427EE /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCE651C285785A2007427EE /* TableView.storyboard */; };
+		3BCE651F28578752007427EE /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE651E28578752007427EE /* TableViewVC.swift */; };
 		3BD13E392850C617000B022F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E382850C617000B022F /* AppDelegate.swift */; };
 		3BD13E3B2850C617000B022F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E3A2850C617000B022F /* SceneDelegate.swift */; };
 		3BD13E3D2850C617000B022F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E3C2850C617000B022F /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		3BCE651C285785A2007427EE /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
+		3BCE651E28578752007427EE /* TableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
 		3BD13E352850C617000B022F /* 3th_seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3th_seminar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD13E382850C617000B022F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BD13E3A2850C617000B022F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				3BD13E532850C7B2000B022F /* ScrollVC.swift */,
 				3BD13E592850E2A5000B022F /* DelegatePracticeVC.swift */,
 				3BD13E5B28510934000B022F /* DelegatePracticeSecondVC.swift */,
+				3BCE651E28578752007427EE /* TableViewVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				3BD13E542850C7B2000B022F /* ScrollVC.swift in Sources */,
 				3BD13E5A2850E2A5000B022F /* DelegatePracticeVC.swift in Sources */,
 				3BD13E392850C617000B022F /* AppDelegate.swift in Sources */,
+				3BCE651F28578752007427EE /* TableViewVC.swift in Sources */,
 				3BD13E3B2850C617000B022F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
