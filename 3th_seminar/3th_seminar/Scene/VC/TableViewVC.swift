@@ -12,7 +12,7 @@ class TableViewVC: UIViewController {
     //MARK: - Vars & Lets Part
     
     //MARK: - UIComponent Part
-    
+    @IBOutlet weak var tableView: UITableView!
     
     //MARK: - Life Cycle Part
     override func viewDidLoad() {

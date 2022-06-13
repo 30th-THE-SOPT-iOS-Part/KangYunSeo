@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3BCE651D285785A2007427EE /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCE651C285785A2007427EE /* TableView.storyboard */; };
 		3BCE651F28578752007427EE /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE651E28578752007427EE /* TableViewVC.swift */; };
+		3BCE652328578BAC007427EE /* TableViewTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE652128578BAC007427EE /* TableViewTVC.swift */; };
+		3BCE652428578BAC007427EE /* TableViewTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BCE652228578BAC007427EE /* TableViewTVC.xib */; };
 		3BD13E392850C617000B022F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E382850C617000B022F /* AppDelegate.swift */; };
 		3BD13E3B2850C617000B022F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E3A2850C617000B022F /* SceneDelegate.swift */; };
 		3BD13E3D2850C617000B022F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD13E3C2850C617000B022F /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		3BCE651C285785A2007427EE /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
 		3BCE651E28578752007427EE /* TableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
+		3BCE652128578BAC007427EE /* TableViewTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTVC.swift; sourceTree = "<group>"; };
+		3BCE652228578BAC007427EE /* TableViewTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewTVC.xib; sourceTree = "<group>"; };
 		3BD13E352850C617000B022F /* 3th_seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3th_seminar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD13E382850C617000B022F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BD13E3A2850C617000B022F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BCE652028578B6F007427EE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3BCE652128578BAC007427EE /* TableViewTVC.swift */,
+				3BCE652228578BAC007427EE /* TableViewTVC.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		3BD13E2C2850C617000B022F = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +92,7 @@
 		3BD13E4C2850C64C000B022F /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				3BCE652028578B6F007427EE /* Cell */,
 				3BD13E562850E1C4000B022F /* StoryBoard */,
 				3BD13E502850C71D000B022F /* VC */,
 			);
@@ -186,6 +200,7 @@
 				3BD13E582850E284000B022F /* DelegatePractice.storyboard in Resources */,
 				3BD13E422850C619000B022F /* Assets.xcassets in Resources */,
 				3BCE651D285785A2007427EE /* TableView.storyboard in Resources */,
+				3BCE652428578BAC007427EE /* TableViewTVC.xib in Resources */,
 				3BD13E4E2850C6DE000B022F /* ScrollView.storyboard in Resources */,
 				3BD13E402850C617000B022F /* Main.storyboard in Resources */,
 			);
@@ -203,6 +218,7 @@
 				3BD13E542850C7B2000B022F /* ScrollVC.swift in Sources */,
 				3BD13E5A2850E2A5000B022F /* DelegatePracticeVC.swift in Sources */,
 				3BD13E392850C617000B022F /* AppDelegate.swift in Sources */,
+				3BCE652328578BAC007427EE /* TableViewTVC.swift in Sources */,
 				3BCE651F28578752007427EE /* TableViewVC.swift in Sources */,
 				3BD13E3B2850C617000B022F /* SceneDelegate.swift in Sources */,
 			);
