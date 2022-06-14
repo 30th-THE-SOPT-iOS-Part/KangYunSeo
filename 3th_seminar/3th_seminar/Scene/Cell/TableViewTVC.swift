@@ -10,6 +10,7 @@ import UIKit
 class TableViewTVC: UITableViewCell {
 
     //MARK: - Vars & Lets Part
+    static let identifier = "MusicTableViewCell"
     
     //MARK: - UIComponent Part
     @IBOutlet weak var albumCoverImage: UIImageView!
@@ -23,8 +24,15 @@ class TableViewTVC: UITableViewCell {
     }
 
     
+    //MARK: - Function Part
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+    }
+    
+    func setData(_ musicData: MusicDataModel){
+        albumCoverImage.image = musicData.albumImage
+        musicTitleLabel.text = musicData.musicTitle
+        musicDescriptionLabel.text = musicData.description
     }
 }

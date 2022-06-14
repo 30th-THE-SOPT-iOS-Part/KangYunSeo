@@ -8,9 +8,6 @@
 import UIKit
 
 class TableViewVC: UIViewController {
-
-    //MARK: - Vars & Lets Part
-    
     //MARK: - UIComponent Part
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,7 +16,5 @@ class TableViewVC: UIViewController {
         super.viewDidLoad()
 
     }
-    
-    //MARK: - IBAction Part
     
 }
