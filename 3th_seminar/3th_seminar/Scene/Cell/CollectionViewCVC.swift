@@ -9,6 +9,7 @@ import UIKit
 
 class CollectionViewCVC: UICollectionViewCell {
     //MARK: - Vars & Lets Part
+    static let identifier = "CollectionViewCVC"
     
     //MARK: - UIComponent Part
     @IBOutlet weak var singerLabel: UILabel!
@@ -19,6 +20,13 @@ class CollectionViewCVC: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    //MARK: - Functions Part
+    func setData(albumData: AlbumDataModel) {
+        albumImageView.image = UIImage(named: albumData.albumImageName)
+        albumTitleLabel.text = albumData.albumTitle
+        singerLabel.text = albumData.albumSinger
     }
 
 }
