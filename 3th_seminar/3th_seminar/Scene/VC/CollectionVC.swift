@@ -22,7 +22,7 @@ class CollectionVC: UIViewController {
         collectionView.register(nib, forCellWithReuseIdentifier: CollectionViewCVC.identifier)
         
         collectionView.dataSource = self
-        collectionView.dataSource = self
+        collectionView.delegate = self
     }
     
 }
