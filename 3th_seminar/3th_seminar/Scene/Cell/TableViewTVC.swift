@@ -10,14 +10,12 @@ import UIKit
 class TableViewTVC: UITableViewCell {
 
     //MARK: - Vars & Lets Part
-    static let identifier = "MusicTableViewCell"
+    static let identifier = "TableViewTVC"
     
     //MARK: - UIComponent Part
     @IBOutlet weak var albumCoverImage: UIImageView!
     @IBOutlet weak var musicTitleLabel: UILabel!
     @IBOutlet weak var musicDescriptionLabel: UILabel!
-    @IBOutlet weak var moveButton: UIImageView!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
