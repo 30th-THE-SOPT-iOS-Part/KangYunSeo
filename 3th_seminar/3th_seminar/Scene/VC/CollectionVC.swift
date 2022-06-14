@@ -18,6 +18,8 @@ class CollectionVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let nib = UINib(nibName: CollectionViewCVC.identifier, bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: CollectionViewCVC.identifier)
     }
     
 }
