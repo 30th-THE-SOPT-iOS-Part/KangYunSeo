@@ -14,7 +14,9 @@ class TableViewVC: UIViewController {
     //MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let nib = UINib(nibName: TableViewTVC.identifier, bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: TableViewTVC.identifier)
     }
     
 }
