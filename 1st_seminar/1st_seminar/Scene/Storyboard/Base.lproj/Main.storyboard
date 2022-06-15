@@ -45,6 +45,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Finish">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="finishButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ixW-IK-10D"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -67,7 +70,6 @@
                     <connections>
                         <outlet property="UIImageView" destination="jJX-q9-0Zk" id="fsJ-oZ-djp"/>
                         <outlet property="UIView" destination="ajY-JA-sI8" id="yGb-X8-idf"/>
-                        <outlet property="finishButtonDidTap" destination="ERX-34-4pp" id="ZGB-wX-IQk"/>
                         <outlet property="messageLabel" destination="fwc-NI-d5A" id="aro-A0-xsV"/>
                         <outlet property="titleLabel" destination="lug-4h-524" id="d5p-Wg-6RL"/>
                     </connections>

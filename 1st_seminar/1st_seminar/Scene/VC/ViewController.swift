@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var UIView: UIView!
     @IBOutlet weak var messageLabel: UILabel!
-    @IBOutlet weak var finishButtonDidTap: UIButton!
     
     
     //MARK: - Life Cycle Part
@@ -23,6 +22,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    //MARK: - IBAction Part
+    @IBAction func finishButtonDidTap(_ sender: Any) {
+    }
+    
 
 }
 
