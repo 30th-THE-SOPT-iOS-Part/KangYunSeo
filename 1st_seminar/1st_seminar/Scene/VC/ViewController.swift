@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -26,14 +27,21 @@ class ViewController: UIViewController {
 
     //MARK: - IBAction Part
     @IBAction func finishButtonDidTap(_ sender: Any) {
+        
         if messageLabel.text == "도착한 메세지가 없어요!" {
             messageLabel.text = "새로운 메세지가 도착했어요!✉️"
             messageLabel.textColor = UIColor.purple
+            
+            // 효과음 추가
+            AudioServicesPlayAlertSound(SystemSoundID(1307))
+            
         }
         else {
             messageLabel.text = "도착한 메세지가 없어요!"
             messageLabel.textColor = UIColor.black
         }
+        
+        messageLabel.sizeToFit()
     }
     
     //MARK: - Functions Part
