@@ -91,7 +91,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIg-1s-FPc">
                                 <rect key="frame" x="30" y="432.5" width="354" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="다음화면으로 이동"/>
                                 <connections>
                                     <action selector="goToSecondVC:" destination="dkz-SK-IKz" eventType="touchUpInside" id="UCb-38-4cC"/>
                                 </connections>
@@ -118,8 +118,24 @@
                     <view key="view" contentMode="scaleToFill" id="9Sh-nf-GRB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCg-Bv-Mhr">
+                                <rect key="frame" x="30" y="432.5" width="354" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="뒤로 가기"/>
+                                <connections>
+                                    <action selector="backButtonDidTap:" destination="xYO-rW-beN" eventType="touchUpInside" id="Ya5-lu-Us7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8zs-ns-Z8U"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RCg-Bv-Mhr" firstAttribute="leading" secondItem="8zs-ns-Z8U" secondAttribute="leading" constant="30" id="MAE-84-X7o"/>
+                            <constraint firstItem="RCg-Bv-Mhr" firstAttribute="centerX" secondItem="9Sh-nf-GRB" secondAttribute="centerX" id="VGR-0O-JTp"/>
+                            <constraint firstItem="8zs-ns-Z8U" firstAttribute="trailing" secondItem="RCg-Bv-Mhr" secondAttribute="trailing" constant="30" id="mWQ-mW-owq"/>
+                            <constraint firstItem="RCg-Bv-Mhr" firstAttribute="centerY" secondItem="9Sh-nf-GRB" secondAttribute="centerY" id="pkg-2G-i7M"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FVg-Sj-1fV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
