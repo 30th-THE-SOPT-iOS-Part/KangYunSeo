@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="80.357142857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--FirstVC-->
         <scene sceneID="WjY-4S-Yxc">
             <objects>
-                <viewController id="dkz-SK-IKz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstVC" id="dkz-SK-IKz" customClass="FirstVC" customModule="_st_seminar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NX8-d1-C8c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,7 +93,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Button"/>
                                 <connections>
-                                    <segue destination="xYO-rW-beN" kind="presentation" id="eEO-If-b9e"/>
+                                    <action selector="goToSecondVC:" destination="dkz-SK-IKz" eventType="touchUpInside" id="UCb-38-4cC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -111,12 +111,12 @@
             </objects>
             <point key="canvasLocation" x="760.86956521739137" y="79.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--SecondVC-->
         <scene sceneID="bt9-IA-43g">
             <objects>
-                <viewController id="xYO-rW-beN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondVC" id="xYO-rW-beN" customClass="SecondVC" customModule="_st_seminar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Sh-nf-GRB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8zs-ns-Z8U"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
