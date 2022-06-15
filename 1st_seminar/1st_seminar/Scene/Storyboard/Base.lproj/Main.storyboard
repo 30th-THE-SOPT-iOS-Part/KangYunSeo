@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_st_seminar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="_st_seminar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,6 @@
                         <constraints>
                             <constraint firstItem="fwc-NI-d5A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8zH-qW-wbn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ERX-34-4pp" secondAttribute="bottom" constant="25" id="A0o-4Q-PWq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ERX-34-4pp" secondAttribute="trailing" constant="20" id="H83-Yt-2ER"/>
                             <constraint firstItem="ajY-JA-sI8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L4W-yu-Oai"/>
                             <constraint firstItem="ERX-34-4pp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LNd-sS-hbe"/>
                             <constraint firstItem="lug-4h-524" firstAttribute="top" secondItem="jJX-q9-0Zk" secondAttribute="bottom" constant="55" id="PoV-gb-7fR"/>
@@ -60,10 +59,18 @@
                             <constraint firstItem="jJX-q9-0Zk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="Z8Y-ha-946"/>
                             <constraint firstItem="jJX-q9-0Zk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pgw-pQ-s42"/>
                             <constraint firstItem="ajY-JA-sI8" firstAttribute="top" secondItem="lug-4h-524" secondAttribute="bottom" constant="15" id="q8N-WH-eUb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lug-4h-524" secondAttribute="trailing" symbolic="YES" id="qaI-kF-w30"/>
                             <constraint firstItem="ERX-34-4pp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rD6-NQ-idI"/>
                             <constraint firstItem="lug-4h-524" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wPk-uH-ekK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="UIImageView" destination="jJX-q9-0Zk" id="fsJ-oZ-djp"/>
+                        <outlet property="UIView" destination="ajY-JA-sI8" id="yGb-X8-idf"/>
+                        <outlet property="finishButtonDidTap" destination="ERX-34-4pp" id="ZGB-wX-IQk"/>
+                        <outlet property="messageLabel" destination="fwc-NI-d5A" id="aro-A0-xsV"/>
+                        <outlet property="titleLabel" destination="lug-4h-524" id="d5p-Wg-6RL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
