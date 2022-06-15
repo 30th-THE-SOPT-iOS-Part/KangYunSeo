@@ -33,14 +33,15 @@
                                     <constraint firstAttribute="width" constant="105" id="e7e-Fp-ED6"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwc-NI-d5A">
-                                <rect key="frame" x="20" y="536.5" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="도착한 메세지가 없어요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwc-NI-d5A">
+                                <rect key="frame" x="20" y="536.5" width="161" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERX-34-4pp">
                                 <rect key="frame" x="20" y="799" width="374" height="38"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Finish">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -70,6 +71,7 @@
                     <connections>
                         <outlet property="UIImageView" destination="jJX-q9-0Zk" id="fsJ-oZ-djp"/>
                         <outlet property="UIView" destination="ajY-JA-sI8" id="yGb-X8-idf"/>
+                        <outlet property="finishButton" destination="ERX-34-4pp" id="S3G-yE-hDZ"/>
                         <outlet property="messageLabel" destination="fwc-NI-d5A" id="aro-A0-xsV"/>
                         <outlet property="titleLabel" destination="lug-4h-524" id="d5p-Wg-6RL"/>
                     </connections>
