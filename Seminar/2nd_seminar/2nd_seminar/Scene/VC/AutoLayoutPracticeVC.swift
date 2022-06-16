@@ -9,6 +9,11 @@ import UIKit
 
 class AutoLayoutPracticeVC: UIViewController {
 
+    //MARK: - Vars & Lets Part
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
+    
     //MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +27,5 @@ class AutoLayoutPracticeVC: UIViewController {
         let backgroundImage = UIImage(named: "img_bg")
         
         self.view.backgroundColor = UIColor(patternImage: backgroundImage ?? backgroundImage!)
-        
     }
-
 }
