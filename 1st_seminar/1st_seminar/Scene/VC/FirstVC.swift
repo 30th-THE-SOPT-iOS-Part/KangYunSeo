@@ -22,7 +22,7 @@ class FirstVC: UIViewController {
     @IBAction func goToSecondVC(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondVC") else { return }
         
-        nextVC.modalPresentationStyle = .fullScreen
+        nextVC.modalPresentationStyle = .pageSheet
         nextVC.modalTransitionStyle = .crossDissolve
         
         self.present(nextVC, animated: true, completion: nil)
