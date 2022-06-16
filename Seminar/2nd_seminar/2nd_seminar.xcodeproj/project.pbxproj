@@ -22,6 +22,7 @@
 		3B6DC4E3285B83D50023FAE3 /* BlueTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC4E2285B83D50023FAE3 /* BlueTabVC.swift */; };
 		3B6DC4E5285B83E80023FAE3 /* GreenTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC4E4285B83E80023FAE3 /* GreenTabVC.swift */; };
 		3BEF5F55285B900A001CD271 /* AutoLayoutPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEF5F54285B900A001CD271 /* AutoLayoutPractice.storyboard */; };
+		3BEF5F57285B9129001CD271 /* AutoLayoutPracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF5F56285B9129001CD271 /* AutoLayoutPracticeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		3B6DC4E2285B83D50023FAE3 /* BlueTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTabVC.swift; sourceTree = "<group>"; };
 		3B6DC4E4285B83E80023FAE3 /* GreenTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenTabVC.swift; sourceTree = "<group>"; };
 		3BEF5F54285B900A001CD271 /* AutoLayoutPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutPractice.storyboard; sourceTree = "<group>"; };
+		3BEF5F56285B9129001CD271 /* AutoLayoutPracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutPracticeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				3B6DC4E8285B84230023FAE3 /* TabBarWithCode */,
 				3B6DC4E7285B84140023FAE3 /* TabBar */,
 				3B6DC4C2285B76130023FAE3 /* ViewController.swift */,
+				3BEF5F56285B9129001CD271 /* AutoLayoutPracticeVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B6DC4E1285B83AD0023FAE3 /* TabBarWithCodeController.swift in Sources */,
+				3BEF5F57285B9129001CD271 /* AutoLayoutPracticeVC.swift in Sources */,
 				3B6DC4DD285B7FC90023FAE3 /* ProfileTabVC.swift in Sources */,
 				3B6DC4C3285B76130023FAE3 /* ViewController.swift in Sources */,
 				3B6DC4DB285B7FB60023FAE3 /* HomeTabVC.swift in Sources */,
