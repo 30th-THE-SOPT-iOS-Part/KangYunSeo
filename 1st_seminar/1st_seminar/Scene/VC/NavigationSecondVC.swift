@@ -9,6 +9,10 @@ import UIKit
 
 class NavigationSecondVC: UIViewController {
 
+    //MARK: - UIComponet Part
+    @IBOutlet weak var dataLabel: UILabel!
+    
+    //MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
         

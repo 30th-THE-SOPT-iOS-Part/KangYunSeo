@@ -24,17 +24,28 @@
                                     <action selector="pushButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cfC-AN-LIg"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dL9-9z-UyT">
+                                <rect key="frame" x="50" y="288" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aV6-Sh-lTc" secondAttribute="trailing" constant="30" id="5gV-n8-cOq"/>
                             <constraint firstItem="aV6-Sh-lTc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="ZzL-bp-VZZ"/>
+                            <constraint firstItem="dL9-9z-UyT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="hzr-sz-3ss"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dL9-9z-UyT" secondAttribute="trailing" constant="50" id="mt3-Hn-029"/>
                             <constraint firstItem="aV6-Sh-lTc" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="vF3-uD-DUz"/>
+                            <constraint firstItem="dL9-9z-UyT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="200" id="wl3-6e-0tU"/>
                             <constraint firstItem="aV6-Sh-lTc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="y9f-uC-sGK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IFF-w7-4F2"/>
+                    <connections>
+                        <outlet property="dataTextField" destination="dL9-9z-UyT" id="SPh-cC-vU4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,16 +85,27 @@
                                     <action selector="popButtonDidTap:" destination="gp9-aB-ekv" eventType="touchUpInside" id="jVg-Y7-HAI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFi-OO-D6U">
+                                <rect key="frame" x="181" y="294" width="52.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dmm-tP-Nbv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GaO-9B-hdu" firstAttribute="centerY" secondItem="ps8-Dk-N6Q" secondAttribute="centerY" id="1X4-qe-Om5"/>
+                            <constraint firstItem="kFi-OO-D6U" firstAttribute="top" secondItem="Dmm-tP-Nbv" secondAttribute="top" constant="250" id="5L5-jA-sky"/>
                             <constraint firstItem="GaO-9B-hdu" firstAttribute="centerX" secondItem="ps8-Dk-N6Q" secondAttribute="centerX" id="O2w-FV-X9f"/>
+                            <constraint firstItem="kFi-OO-D6U" firstAttribute="centerX" secondItem="ps8-Dk-N6Q" secondAttribute="centerX" id="e1c-yK-uWT"/>
                             <constraint firstItem="GaO-9B-hdu" firstAttribute="leading" secondItem="Dmm-tP-Nbv" secondAttribute="leading" constant="30" id="mWP-db-Q81"/>
                             <constraint firstItem="Dmm-tP-Nbv" firstAttribute="trailing" secondItem="GaO-9B-hdu" secondAttribute="trailing" constant="30" id="n8Z-dd-CFg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="kFi-OO-D6U" id="6Qm-og-hW5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7p-FZ-c7m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

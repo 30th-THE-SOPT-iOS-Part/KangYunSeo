@@ -8,7 +8,11 @@
 import UIKit
 
 class NavigationFirstVC: UIViewController {
-
+    
+    //MARK: - UIComponent Part
+    @IBOutlet weak var dataTextField: UITextField!
+    
+    //MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
 
