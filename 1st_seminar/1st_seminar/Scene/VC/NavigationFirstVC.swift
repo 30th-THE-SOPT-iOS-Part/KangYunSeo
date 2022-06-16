@@ -22,6 +22,8 @@ class NavigationFirstVC: UIViewController {
     @IBAction func pushButtonDidTap(_ sender: Any) {
         guard let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "NavigationSecondVC") as? NavigationSecondVC else { return }
         
+        secondVC.message = dataTextField.text
+        
         self.navigationController?.pushViewController(secondVC, animated: true)
     }
     
