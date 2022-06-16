@@ -11,8 +11,12 @@ class NavigationSecondVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
+    //MARK: - IBAtion Part
+    @IBAction func popButtonDidTap(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }

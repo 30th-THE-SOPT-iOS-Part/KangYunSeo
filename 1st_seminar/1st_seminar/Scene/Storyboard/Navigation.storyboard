@@ -19,7 +19,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aV6-Sh-lTc">
                                 <rect key="frame" x="30" y="432.5" width="354" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="push"/>
                                 <connections>
                                     <action selector="pushButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cfC-AN-LIg"/>
                                 </connections>
@@ -65,8 +65,24 @@
                     <view key="view" contentMode="scaleToFill" id="ps8-Dk-N6Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaO-9B-hdu">
+                                <rect key="frame" x="30" y="432.5" width="354" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="pop"/>
+                                <connections>
+                                    <action selector="popButtonDidTap:" destination="gp9-aB-ekv" eventType="touchUpInside" id="jVg-Y7-HAI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Dmm-tP-Nbv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GaO-9B-hdu" firstAttribute="centerY" secondItem="ps8-Dk-N6Q" secondAttribute="centerY" id="1X4-qe-Om5"/>
+                            <constraint firstItem="GaO-9B-hdu" firstAttribute="centerX" secondItem="ps8-Dk-N6Q" secondAttribute="centerX" id="O2w-FV-X9f"/>
+                            <constraint firstItem="GaO-9B-hdu" firstAttribute="leading" secondItem="Dmm-tP-Nbv" secondAttribute="leading" constant="30" id="mWP-db-Q81"/>
+                            <constraint firstItem="Dmm-tP-Nbv" firstAttribute="trailing" secondItem="GaO-9B-hdu" secondAttribute="trailing" constant="30" id="n8Z-dd-CFg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7p-FZ-c7m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
