@@ -16,6 +16,9 @@ class NavigationFirstVC: UIViewController {
     
     //MARK: - IBAction Part
     @IBAction func pushButtonDidTap(_ sender: Any) {
+        guard let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "NavigationSecondVC") as? NavigationSecondVC else { return }
+        
+        self.navigationController?.pushViewController(secondVC, animated: true)
     }
     
 }
