@@ -9,10 +9,9 @@ import UIKit
 
 class BlueTabVC: UIViewController {
 
+    //MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 

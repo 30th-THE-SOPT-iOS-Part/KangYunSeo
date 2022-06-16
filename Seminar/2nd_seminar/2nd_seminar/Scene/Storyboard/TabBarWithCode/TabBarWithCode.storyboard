@@ -10,12 +10,24 @@
         <!--Item 2-->
         <scene sceneID="bpU-we-EgK">
             <objects>
-                <viewController id="nIS-hA-VUk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GreenTabVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nIS-hA-VUk" customClass="GreenTabVC" customModule="_nd_seminar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HaL-xI-DQf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swS-rl-mRd">
+                                <rect key="frame" x="106.5" y="436" width="201" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Oiu-sc-fpc"/>
                         <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="swS-rl-mRd" firstAttribute="centerX" secondItem="HaL-xI-DQf" secondAttribute="centerX" id="KvM-rk-ACa"/>
+                            <constraint firstItem="swS-rl-mRd" firstAttribute="centerY" secondItem="HaL-xI-DQf" secondAttribute="centerY" id="T6l-4y-IHD"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="SB2-4t-dIf"/>
                 </viewController>
@@ -26,12 +38,24 @@
         <!--Item 1-->
         <scene sceneID="hQH-Sg-ahv">
             <objects>
-                <viewController id="M9t-7P-hPG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlueTabVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M9t-7P-hPG" customClass="BlueTabVC" customModule="_nd_seminar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5x0-6V-xqC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5E4-kM-mUo">
+                                <rect key="frame" x="114" y="436" width="186" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="IR2-IY-h1e"/>
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5E4-kM-mUo" firstAttribute="centerY" secondItem="5x0-6V-xqC" secondAttribute="centerY" id="0K1-aM-eiR"/>
+                            <constraint firstItem="5E4-kM-mUo" firstAttribute="centerX" secondItem="5x0-6V-xqC" secondAttribute="centerX" id="9rw-HE-mdi"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="rFG-0d-lg1"/>
                 </viewController>

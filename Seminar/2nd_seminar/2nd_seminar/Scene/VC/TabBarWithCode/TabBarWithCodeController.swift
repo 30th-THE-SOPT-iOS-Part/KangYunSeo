@@ -9,10 +9,10 @@ import UIKit
 
 class TabBarWithCodeController: UITabBarController {
 
+    //MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
