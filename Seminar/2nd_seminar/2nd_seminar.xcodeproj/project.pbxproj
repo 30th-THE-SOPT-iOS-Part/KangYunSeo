@@ -23,6 +23,7 @@
 		3B6DC4E5285B83E80023FAE3 /* GreenTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC4E4285B83E80023FAE3 /* GreenTabVC.swift */; };
 		3BEF5F55285B900A001CD271 /* AutoLayoutPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEF5F54285B900A001CD271 /* AutoLayoutPractice.storyboard */; };
 		3BEF5F57285B9129001CD271 /* AutoLayoutPracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF5F56285B9129001CD271 /* AutoLayoutPracticeVC.swift */; };
+		3BEF5F59285B9BC4001CD271 /* StackView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEF5F58285B9BC4001CD271 /* StackView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		3B6DC4E4285B83E80023FAE3 /* GreenTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenTabVC.swift; sourceTree = "<group>"; };
 		3BEF5F54285B900A001CD271 /* AutoLayoutPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutPractice.storyboard; sourceTree = "<group>"; };
 		3BEF5F56285B9129001CD271 /* AutoLayoutPracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutPracticeVC.swift; sourceTree = "<group>"; };
+		3BEF5F58285B9BC4001CD271 /* StackView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				3B6DC4E9285B84370023FAE3 /* TabBar */,
 				3B6DC4C9285B76140023FAE3 /* LaunchScreen.storyboard */,
 				3BEF5F54285B900A001CD271 /* AutoLayoutPractice.storyboard */,
+				3BEF5F58285B9BC4001CD271 /* StackView.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				3B6DC4DF285B83340023FAE3 /* TabBarWithCode.storyboard in Resources */,
 				3B6DC4C8285B76140023FAE3 /* Assets.xcassets in Resources */,
 				3B6DC4D9285B7FA70023FAE3 /* ProfileTab.storyboard in Resources */,
+				3BEF5F59285B9BC4001CD271 /* StackView.storyboard in Resources */,
 				3B6DC4C6285B76130023FAE3 /* Main.storyboard in Resources */,
 				3B6DC4D7285B7F9F0023FAE3 /* HomeTab.storyboard in Resources */,
 				3BEF5F55285B900A001CD271 /* AutoLayoutPractice.storyboard in Resources */,
