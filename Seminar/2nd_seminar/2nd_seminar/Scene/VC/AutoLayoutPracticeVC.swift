@@ -19,7 +19,7 @@ class AutoLayoutPracticeVC: UIViewController {
     
     //MARK: - Function Part
     func setBackground() {
-        let backgroundImage = UIImage(named: "iPhone 13 mini")
+        let backgroundImage = UIImage(named: "img_bg")
         
         self.view.backgroundColor = UIColor(patternImage: backgroundImage ?? backgroundImage!)
         
