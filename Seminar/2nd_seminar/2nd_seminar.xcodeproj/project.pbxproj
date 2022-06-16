@@ -21,6 +21,7 @@
 		3B6DC4E1285B83AD0023FAE3 /* TabBarWithCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC4E0285B83AD0023FAE3 /* TabBarWithCodeController.swift */; };
 		3B6DC4E3285B83D50023FAE3 /* BlueTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC4E2285B83D50023FAE3 /* BlueTabVC.swift */; };
 		3B6DC4E5285B83E80023FAE3 /* GreenTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC4E4285B83E80023FAE3 /* GreenTabVC.swift */; };
+		3BEF5F55285B900A001CD271 /* AutoLayoutPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEF5F54285B900A001CD271 /* AutoLayoutPractice.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		3B6DC4E0285B83AD0023FAE3 /* TabBarWithCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWithCodeController.swift; sourceTree = "<group>"; };
 		3B6DC4E2285B83D50023FAE3 /* BlueTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTabVC.swift; sourceTree = "<group>"; };
 		3B6DC4E4285B83E80023FAE3 /* GreenTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenTabVC.swift; sourceTree = "<group>"; };
+		3BEF5F54285B900A001CD271 /* AutoLayoutPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutPractice.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				3B6DC4EA285B84440023FAE3 /* TabBarWithCode */,
 				3B6DC4E9285B84370023FAE3 /* TabBar */,
 				3B6DC4C9285B76140023FAE3 /* LaunchScreen.storyboard */,
+				3BEF5F54285B900A001CD271 /* AutoLayoutPractice.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				3B6DC4D9285B7FA70023FAE3 /* ProfileTab.storyboard in Resources */,
 				3B6DC4C6285B76130023FAE3 /* Main.storyboard in Resources */,
 				3B6DC4D7285B7F9F0023FAE3 /* HomeTab.storyboard in Resources */,
+				3BEF5F55285B900A001CD271 /* AutoLayoutPractice.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
