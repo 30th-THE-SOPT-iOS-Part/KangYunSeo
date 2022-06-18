@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 15.0, *) {
             let appearance = UITabBarAppearance()
             appearance.configureWithOpaqueBackground()
-            
+
             // 바꾸고 싶은 색으로 backgroundColor 설정
             UITabBar.appearance().backgroundColor = UIColor.white
             // 아이콘 색 설정

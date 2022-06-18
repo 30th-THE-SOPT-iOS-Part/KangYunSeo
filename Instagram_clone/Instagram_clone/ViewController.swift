@@ -9,41 +9,38 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //MARK: - @IBOutlet
+    //MARK: - UIComponent Part
     @IBOutlet weak var idTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var loginButton: UIButton!
-    
     @IBOutlet weak var passwordHideButton: UIButton!
     
+    //MARK: - Life Cycle Part
     // 메모리에 올라가는 순간 한 번만 실행되는 코드, UI초기화 같은게 들어감
-    
     // addTarget -> action
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButton.isEnabled = false
         
         idTextField.addTarget(self, action: #selector(btnEnable), for: .editingChanged)
-        
         passwordTextField.addTarget(self, action: #selector(btnEnable), for: .editingChanged)
     }
     
-    // MARK: - 생명주기 함수
     // dismiss 후 textField에 입력해준 값이 남아있는 문제 해결
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         resetTextField()
     }
     
+    
+    //MARK: - Function Part
     // textField 초기화하는 메서드
     private func resetTextField() {
         idTextField.text?.removeAll()
         passwordTextField.text?.removeAll()
     }
     
-                              
+                        
     @objc func btnEnable() {
         if idTextField.text?.isEmpty == false && passwordTextField.text?.isEmpty == false {
             loginButton.isEnabled = true
@@ -52,7 +49,7 @@ class ViewController: UIViewController {
         }
     }
     
-    //MARK: - @IBAction
+    //MARK: - @IBAction Part
     @IBAction func signinButton(_ sender: Any) {
         guard let signinVC = self.storyboard?.instantiateViewController(withIdentifier: "finishViewController") as? finishViewController else {return}
         signinVC.modalPresentationStyle = .fullScreen

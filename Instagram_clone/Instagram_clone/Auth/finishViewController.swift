@@ -9,12 +9,14 @@ import UIKit
 
 class finishViewController: UIViewController {
     
-    
+    //MARK: - Vars & Lets Part
     var name: String?
     var password: String?
     
+    //MARK: - UIComponent Part
     @IBOutlet weak var finishLabel: UILabel!
     
+    //MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,6 +25,7 @@ class finishViewController: UIViewController {
         
     }
     
+    //MARK: - Function Part
     private func setFinishLabel() {
         if let name = name {
             finishLabel.text = "\(name)님 Instagram에 오신 것을 환영합니다."
@@ -31,6 +34,7 @@ class finishViewController: UIViewController {
         }
     }
     
+    //MARK: - IBAction Part
     @IBAction func finishButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "TabBar", bundle: Bundle.main)
         guard let nextVC = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController else {return}

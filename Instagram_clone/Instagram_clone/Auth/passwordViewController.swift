@@ -9,17 +9,16 @@ import UIKit
 
 class passwordViewController: UIViewController {
     
-    //MARK: - IBOutlet
-    @IBOutlet weak var passwordTextField: UITextField!
-    
-    @IBOutlet weak var passwordHideButton: UIButton!
-    
-    @IBOutlet weak var loginButton: UIButton!
-    
-    //MARK: - Properties
+    //MARK: - Vars & Lets Part
     var userId: String?
     var password: String?
     
+    //MARK: - UIComponent Part
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordHideButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    
+    //MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +27,7 @@ class passwordViewController: UIViewController {
         passwordTextField.addTarget(self, action: #selector(btnEnable), for: .editingChanged)
     }
     
+    //MARK: - Function Part
     @objc func btnEnable() {
         if passwordTextField.text?.isEmpty == false {
             loginButton.isEnabled = true
@@ -36,6 +36,7 @@ class passwordViewController: UIViewController {
         }
     }
     
+    //MARK: - IBAction Part
     @IBAction func passwordHideButton(_ sender: Any) {
         if passwordTextField.isSecureTextEntry {
             passwordHideButton.setImage(UIImage(named: "passwordHideEye"), for: .normal)
