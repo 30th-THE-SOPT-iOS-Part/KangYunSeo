@@ -34,6 +34,7 @@
 		3BCE681C28244F8E00CE7082 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE681A28244F8E00CE7082 /* TableViewCell.swift */; };
 		3BCE681D28244F8E00CE7082 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BCE681B28244F8E00CE7082 /* TableViewCell.xib */; };
 		3BCE681F28245C1B00CE7082 /* FeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE681E28245C1B00CE7082 /* FeedDataModel.swift */; };
+		3BEF5F61285DFD90001CD271 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF5F60285DFD90001CD271 /* TabBarController.swift */; };
 		4A51361E1E3F9B61F913A6C5 /* Pods_Instagram_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F5BE7BAABE281EA3FAE740 /* Pods_Instagram_clone.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		3BCE681A28244F8E00CE7082 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3BCE681B28244F8E00CE7082 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		3BCE681E28245C1B00CE7082 /* FeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataModel.swift; sourceTree = "<group>"; };
+		3BEF5F60285DFD90001CD271 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		85F5BE7BAABE281EA3FAE740 /* Pods_Instagram_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C368AD5F30676CF0C4FBF7DF /* Pods-Instagram_clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram_clone.release.xcconfig"; path = "Target Support Files/Pods-Instagram_clone/Pods-Instagram_clone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -237,6 +239,7 @@
 				3BABE36B2812DC4A00A82DB6 /* SearchTab */,
 				3BABE3682812DC0B00A82DB6 /* HomeTab */,
 				3BABE3662812D65D00A82DB6 /* TabBar.storyboard */,
+				3BEF5F60285DFD90001CD271 /* TabBarController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				3BCE681F28245C1B00CE7082 /* FeedDataModel.swift in Sources */,
 				3BC8108327FF5D2E00EB384F /* ViewController.swift in Sources */,
 				3BC810992800894C00EB384F /* finishViewController.swift in Sources */,
+				3BEF5F61285DFD90001CD271 /* TabBarController.swift in Sources */,
 				3BC8107F27FF5D2E00EB384F /* AppDelegate.swift in Sources */,
 				3BB5CD19282ACB25000CFE83 /* NetworkResult.swift in Sources */,
 				3BCE681C28244F8E00CE7082 /* TableViewCell.swift in Sources */,

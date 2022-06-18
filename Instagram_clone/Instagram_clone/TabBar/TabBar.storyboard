@@ -19,7 +19,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="PdN-Ey-0aZ">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="wt8-4N-nag" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wt8-4N-nag" customClass="TabBarController" customModule="Instagram_clone" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M1P-9f-Rht">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
