@@ -19,26 +19,31 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Instargram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="nin-nz-ZWU">
                                 <rect key="frame" x="119.5" y="214" width="175" height="50"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호, 사용자 이름 또는 이메일" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hTs-E6-aUG">
-                                <rect key="frame" x="16" y="297.5" width="382" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="VNd-FC-M88"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5lX-oa-HEY">
-                                <rect key="frame" x="16" y="357.5" width="382" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="YgF-CO-bh3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JXB-Lb-cA2">
+                                <rect key="frame" x="16" y="297.5" width="382" height="104"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호, 사용자 이름 또는 이메일" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hTs-E6-aUG">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="VNd-FC-M88"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5lX-oa-HEY">
+                                        <rect key="frame" x="0.0" y="60" width="382" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="YgF-CO-bh3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjD-Rq-BYK">
-                                <rect key="frame" x="329" y="412" width="59" height="34"/>
+                                <rect key="frame" x="354" y="362.5" width="44" height="34"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="passwordShownEye" title=""/>
+                                <buttonConfiguration key="configuration" style="plain" image="passwordHideEye" title=""/>
                                 <connections>
                                     <action selector="passwordHideButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OTm-Mi-ahZ"/>
                                 </connections>
@@ -91,24 +96,20 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5lX-oa-HEY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="89A-ye-dBy"/>
                             <constraint firstItem="9C7-QH-a5h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AD0-uE-S5C"/>
-                            <constraint firstItem="hTs-E6-aUG" firstAttribute="top" secondItem="nin-nz-ZWU" secondAttribute="bottom" constant="33.420000000000002" id="Kdq-0q-4GI"/>
                             <constraint firstItem="T4b-MO-xlZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LKL-Us-dEp"/>
                             <constraint firstItem="nin-nz-ZWU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="126" id="NgZ-Bf-XDb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cjD-Rq-BYK" secondAttribute="trailing" constant="26" id="UMa-Bm-Zft"/>
-                            <constraint firstItem="5lX-oa-HEY" firstAttribute="top" secondItem="hTs-E6-aUG" secondAttribute="bottom" constant="16" id="VFh-dH-Npm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hTs-E6-aUG" secondAttribute="trailing" constant="16" id="Veh-e5-jfy"/>
-                            <constraint firstItem="cjD-Rq-BYK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="T4b-MO-xlZ" secondAttribute="trailing" constant="8" symbolic="YES" id="ZjE-8y-ILY"/>
+                            <constraint firstItem="JXB-Lb-cA2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="T3p-dP-Lqx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JXB-Lb-cA2" secondAttribute="trailing" constant="16" id="V5b-Aw-eB0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T4b-MO-xlZ" secondAttribute="trailing" symbolic="YES" id="Y1K-6W-8Kg"/>
+                            <constraint firstItem="T4b-MO-xlZ" firstAttribute="top" secondItem="JXB-Lb-cA2" secondAttribute="bottom" constant="16" id="aEo-bF-6Sa"/>
                             <constraint firstItem="9C7-QH-a5h" firstAttribute="top" secondItem="T4b-MO-xlZ" secondAttribute="bottom" constant="33" id="aOV-Tp-ltl"/>
                             <constraint firstItem="eld-3t-STg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c1s-iP-jXn"/>
-                            <constraint firstItem="cjD-Rq-BYK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="329" id="fzy-kY-8UX"/>
+                            <constraint firstItem="JXB-Lb-cA2" firstAttribute="top" secondItem="nin-nz-ZWU" secondAttribute="bottom" constant="33.5" id="hNh-29-dH9"/>
                             <constraint firstItem="eld-3t-STg" firstAttribute="top" secondItem="9C7-QH-a5h" secondAttribute="bottom" constant="37.5" id="hqJ-uk-OzB"/>
-                            <constraint firstItem="cjD-Rq-BYK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="324" id="j59-J4-OdJ"/>
                             <constraint firstItem="nin-nz-ZWU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jgL-cP-baX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5lX-oa-HEY" secondAttribute="trailing" constant="16" id="jwG-BC-qrH"/>
-                            <constraint firstItem="hTs-E6-aUG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pQM-al-ERS"/>
-                            <constraint firstItem="T4b-MO-xlZ" firstAttribute="top" secondItem="5lX-oa-HEY" secondAttribute="bottom" constant="16" id="sOZ-Od-jGb"/>
+                            <constraint firstItem="cjD-Rq-BYK" firstAttribute="top" secondItem="JXB-Lb-cA2" secondAttribute="top" constant="65" id="srp-lr-ZvK"/>
+                            <constraint firstItem="cjD-Rq-BYK" firstAttribute="trailing" secondItem="JXB-Lb-cA2" secondAttribute="trailing" id="xuf-4T-2Lu"/>
                             <constraint firstItem="9C7-QH-a5h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yXS-qc-E7W"/>
                         </constraints>
                     </view>
@@ -359,6 +360,7 @@
     </scenes>
     <resources>
         <image name="Instargram_logo" width="175" height="50"/>
+        <image name="passwordHideEye" width="20" height="20"/>
         <image name="passwordShownEye" width="20" height="20"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
