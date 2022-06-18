@@ -32,12 +32,11 @@ class finishViewController: UIViewController {
     }
     
     @IBAction func finishButton(_ sender: Any) {
-//        let storyboard = UIStoryboard(name: "TabBar", bundle: Bundle.main)
-//        guard let nextVC = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController else {return}
-//
-//        nextVC.modalPresentationStyle = .fullScreen
-//        self.present(nextVC, animated: true, completion: nil)
-        //signUp()
+        let storyboard = UIStoryboard(name: "TabBar", bundle: Bundle.main)
+        guard let nextVC = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController else {return}
+
+        nextVC.modalPresentationStyle = .fullScreen
+        self.present(nextVC, animated: true, completion: nil)
     }
     
     
