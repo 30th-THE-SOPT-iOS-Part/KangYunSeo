@@ -22,6 +22,8 @@ class passwordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationBarCustom()
+        
         loginButton.isEnabled = false
 
         passwordTextField.addTarget(self, action: #selector(btnEnable), for: .editingChanged)
@@ -34,6 +36,10 @@ class passwordViewController: UIViewController {
         } else {
             loginButton.isEnabled = false
         }
+    }
+    
+    private func navigationBarCustom() {
+        navigationController?.navigationBar.topItem?.title=""
     }
     
     //MARK: - IBAction Part

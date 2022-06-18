@@ -20,6 +20,7 @@ class finishViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationBarCustom()
         setFinishLabel()
         self.finishLabel.sizeToFit()
         
@@ -32,6 +33,10 @@ class finishViewController: UIViewController {
             finishLabel.sizeToFit()
             finishLabel.textAlignment = .center
         }
+    }
+    
+    private func navigationBarCustom() {
+        navigationController?.navigationBar.topItem?.title=""
     }
     
     //MARK: - IBAction Part

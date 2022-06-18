@@ -24,29 +24,16 @@ class ViewController: UIViewController {
         
         idTextField.addTarget(self, action: #selector(btnEnable), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(btnEnable), for: .editingChanged)
+        
+        navigationBarCustom()
     }
     
     // dismiss 후 textField에 입력해준 값이 남아있는 문제 해결
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         resetTextField()
-    }
-    
-    
-    //MARK: - Function Part
-    // textField 초기화하는 메서드
-    private func resetTextField() {
-        idTextField.text?.removeAll()
-        passwordTextField.text?.removeAll()
-    }
-    
-                        
-    @objc func btnEnable() {
-        if idTextField.text?.isEmpty == false && passwordTextField.text?.isEmpty == false {
-            loginButton.isEnabled = true
-        } else {
-            loginButton.isEnabled = false
-        }
+        navigationBarCustom()
     }
     
     //MARK: - @IBAction Part
@@ -60,7 +47,6 @@ class ViewController: UIViewController {
         self.present(signinVC, animated: true, completion: nil)
 //        login()
     }
-
 
     @IBAction func signupButton(_ sender: Any) {
 //        navigation controller 만들어야 작동
@@ -79,6 +65,28 @@ class ViewController: UIViewController {
             passwordHideButton.setImage(UIImage(named: "icn_password_hidden"), for: .normal)
             passwordTextField.isSecureTextEntry = true
         }
+    }
+    
+    //MARK: - Function Part
+    // textField 초기화하는 메서드
+    @objc func btnEnable() {
+        if idTextField.text?.isEmpty == false && passwordTextField.text?.isEmpty == false {
+            loginButton.isEnabled = true
+        } else {
+            loginButton.isEnabled = false
+        }
+    }
+    
+    private func resetTextField() {
+        idTextField.text?.removeAll()
+        passwordTextField.text?.removeAll()
+    }
+    
+    private func navigationBarCustom() {
+        navigationController?.navigationBar.topItem?.title=""
+        navigationController?.navigationBar.backIndicatorImage = UIImage(named: "icn_back")
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "icn_back")
+        navigationController?.navigationBar.tintColor = .black
     }
 }
 
