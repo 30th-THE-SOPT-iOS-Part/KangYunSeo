@@ -76,7 +76,7 @@ class ViewController: UIViewController {
             
         }
         else {
-            passwordHideButton.setImage(UIImage(named: "passwordHideEye"), for: .normal)
+            passwordHideButton.setImage(UIImage(named: "icn_password_hidden"), for: .normal)
             passwordTextField.isSecureTextEntry = true
         }
     }

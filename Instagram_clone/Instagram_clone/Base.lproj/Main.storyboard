@@ -43,7 +43,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjD-Rq-BYK">
                                 <rect key="frame" x="354" y="362.5" width="44" height="34"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="passwordHideEye" title=""/>
+                                <buttonConfiguration key="configuration" style="plain" image="icn_password_hidden" title=""/>
                                 <connections>
                                     <action selector="passwordHideButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OTm-Mi-ahZ"/>
                                 </connections>
@@ -360,7 +360,7 @@
     </scenes>
     <resources>
         <image name="Instargram_logo" width="175" height="50"/>
-        <image name="passwordHideEye" width="20" height="20"/>
+        <image name="icn_password_hidden" width="20" height="20"/>
         <image name="passwordShownEye" width="20" height="20"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
