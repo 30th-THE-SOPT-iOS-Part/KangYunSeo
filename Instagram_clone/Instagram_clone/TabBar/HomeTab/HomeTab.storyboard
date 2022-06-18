@@ -116,7 +116,7 @@
                             <constraint firstItem="Tac-7v-fQz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sUe-F1-r8U"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="icn_home_selected" selectedImage="icn_home_selected" id="Y7j-Jj-wpo"/>
+                    <tabBarItem key="tabBarItem" title="" image="icn_home" selectedImage="icn_home_selected" id="Y7j-Jj-wpo"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="hwd-9n-Tbd" id="dCw-uv-5ZQ"/>
@@ -131,6 +131,7 @@
     <resources>
         <image name="Instagram Black Logo" width="175" height="50"/>
         <image name="icn_add" width="24" height="24"/>
+        <image name="icn_home" width="24" height="24"/>
         <image name="icn_home_selected" width="24" height="26"/>
         <image name="icn_share" width="24" height="24"/>
         <image name="icn_unlike" width="24" height="24"/>
