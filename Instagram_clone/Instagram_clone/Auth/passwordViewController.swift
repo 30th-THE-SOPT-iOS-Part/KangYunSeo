@@ -39,11 +39,11 @@ class passwordViewController: UIViewController {
     //MARK: - IBAction Part
     @IBAction func passwordHideButton(_ sender: Any) {
         if passwordTextField.isSecureTextEntry {
-            passwordHideButton.setImage(UIImage(named: "passwordHideEye"), for: .normal)
+            passwordHideButton.setImage(UIImage(named: "passwordShownEye"), for: .normal)
             passwordTextField.isSecureTextEntry = false
         }
         else {
-            passwordHideButton.setImage(UIImage(named: "passwordShownEye"), for: .normal)
+            passwordHideButton.setImage(UIImage(named: "icn_password_hidden"), for: .normal)
             passwordTextField.isSecureTextEntry = true
         }
     }
