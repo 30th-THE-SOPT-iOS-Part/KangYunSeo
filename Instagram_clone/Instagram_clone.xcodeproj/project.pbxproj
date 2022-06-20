@@ -213,8 +213,7 @@
 		3BCE6808282433F200CE7082 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				3BCE681428243E4F00CE7082 /* StoryCollectionViewCell.swift */,
-				3BCE681528243E4F00CE7082 /* StoryCollectionViewCell.xib */,
+				3BEF5F642860E10D001CD271 /* Cell */,
 				3BCE68182824401300CE7082 /* StoryDataModel.swift */,
 			);
 			path = CollectionView;
@@ -223,8 +222,7 @@
 		3BCE6809282433FD00CE7082 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				3BCE681A28244F8E00CE7082 /* TableViewCell.swift */,
-				3BCE681B28244F8E00CE7082 /* TableViewCell.xib */,
+				3BEF5F632860E103001CD271 /* Cell */,
 				3BCE681E28245C1B00CE7082 /* FeedDataModel.swift */,
 			);
 			path = TableView;
@@ -242,6 +240,24 @@
 				3BEF5F60285DFD90001CD271 /* TabBarController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		3BEF5F632860E103001CD271 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3BCE681B28244F8E00CE7082 /* TableViewCell.xib */,
+				3BCE681A28244F8E00CE7082 /* TableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3BEF5F642860E10D001CD271 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3BCE681428243E4F00CE7082 /* StoryCollectionViewCell.swift */,
+				3BCE681528243E4F00CE7082 /* StoryCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F9FADBA349F1216E4662C118 /* Pods */ = {
