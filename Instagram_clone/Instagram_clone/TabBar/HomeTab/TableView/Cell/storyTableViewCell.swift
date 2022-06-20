@@ -56,18 +56,22 @@ extension storyTableViewCell: UICollectionViewDataSource {
 }
 
 extension storyTableViewCell: UICollectionViewDelegateFlowLayout {
+    //셀 자체 크기 지정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         <#code#>
     }
     
+    //셀 외부에 존재하는 inset 크기 결정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         <#code#>
     }
     
+    //셀 위, 아래 간격 조정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         <#code#>
     }
     
+    //셀의 좌, 우 간격 조정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         <#code#>
     }
