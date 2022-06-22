@@ -24,6 +24,11 @@ class storyTableViewCell: UITableViewCell {
         storyCollectionView.delegate = self
         storyCollectionView.dataSource = self
         
+        //컬렉션뷰 스크롤 방향 조정
+        if let layout = storyCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .horizontal
+        }
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -68,12 +73,12 @@ extension storyTableViewCell: UICollectionViewDelegateFlowLayout {
     
     //셀의 컨텐츠 외부에 존재하는 inset 크기 결정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 6, bottom: 0, right: 0)
+        return UIEdgeInsets(top: 6, left: 6, bottom: 0, right: 0)
     }
     
     //셀 위, 아래 간격 조정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 3
     }
     
     //셀의 좌, 우 간격 조정
