@@ -19,6 +19,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var userNameFeedLabel: UILabel!
     @IBOutlet weak var feedContentLabel: UILabel!
     @IBOutlet weak var commentLabel: UILabel!
+    @IBOutlet weak var likeButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
