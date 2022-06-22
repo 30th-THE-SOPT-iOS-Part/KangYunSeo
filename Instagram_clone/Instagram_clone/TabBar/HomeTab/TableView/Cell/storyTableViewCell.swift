@@ -61,23 +61,23 @@ extension storyTableViewCell: UICollectionViewDelegateFlowLayout {
         let width = UIScreen.main.bounds.width
         
         let cellWidth = width * (58/375)
-        let cellHeight = CGFloat(72/58)
+        let cellHeight = CGFloat(100)
         
         return CGSize(width: cellWidth, height: cellHeight)
     }
     
     //셀의 컨텐츠 외부에 존재하는 inset 크기 결정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        return UIEdgeInsets(top: 0, left: 6, bottom: 0, right: 0)
     }
     
     //셀 위, 아래 간격 조정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 8
+        return 0
     }
     
     //셀의 좌, 우 간격 조정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 4
+        return 0
     }
 }
