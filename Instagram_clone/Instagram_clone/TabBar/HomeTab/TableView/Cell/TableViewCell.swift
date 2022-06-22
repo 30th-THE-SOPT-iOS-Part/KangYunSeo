@@ -9,6 +9,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
+    //MARK: - UIComponent Part
     // Cell을 구분하기 위한 Identifier
     static let identifier = "TableViewCell"
     
@@ -32,6 +33,9 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //MARK: - IBAction Part
+    
+    //MARK: - Fucntion Part
     // 각 cell 별로 다른 정보가 표시되어야 하므로, 값을 넣어주는 함수를 생성
     func setData(_ feedData: FeedDataModel) {
         userImage.image = UIImage(named: feedData.userImage)
