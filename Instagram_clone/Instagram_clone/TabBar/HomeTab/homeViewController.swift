@@ -29,3 +29,9 @@ class homeViewController: UIViewController {
     }
 }
 
+//MARK: - Extension Part
+extension homeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return indexPath.section == 0 ? 84 : 488
+    }
+}
