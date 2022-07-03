@@ -9,6 +9,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
+    //MARK: - UIComponent Part
     // Cell을 구분하기 위한 Identifier
     static let identifier = "TableViewCell"
     
@@ -19,6 +20,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var userNameFeedLabel: UILabel!
     @IBOutlet weak var feedContentLabel: UILabel!
     @IBOutlet weak var commentLabel: UILabel!
+    @IBOutlet weak var likeButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,6 +33,13 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //MARK: - IBAction Part
+    @IBAction func likeButtonDidTap(_ sender: UIButton) {
+        isSelected.toggle()
+        isSelected ? sender.setImage(UIImage(named: "icn_like"), for: .normal) : sender.setImage(UIImage(named: "icn_unlike"), for: .normal)
+    }
+    
+    //MARK: - Fucntion Part
     // 각 cell 별로 다른 정보가 표시되어야 하므로, 값을 넣어주는 함수를 생성
     func setData(_ feedData: FeedDataModel) {
         userImage.image = UIImage(named: feedData.userImage)

@@ -12,17 +12,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // 탭 바 배경색 변경
-        if #available(iOS 15.0, *) {
-            let appearance = UITabBarAppearance()
-            appearance.configureWithOpaqueBackground()
-            
-            // 바꾸고 싶은 색으로 backgroundColor 설정
-            UITabBar.appearance().backgroundColor = UIColor.white
-            // 아이콘 색 설정
-            UITabBar.appearance().tintColor = UIColor.black
-        }
-        
         return true
     }
 

@@ -9,25 +9,27 @@ import UIKit
 
 class passwordViewController: UIViewController {
     
-    //MARK: - IBOutlet
-    @IBOutlet weak var passwordTextField: UITextField!
-    
-    @IBOutlet weak var passwordHideButton: UIButton!
-    
-    @IBOutlet weak var loginButton: UIButton!
-    
-    //MARK: - Properties
+    //MARK: - Vars & Lets Part
     var userId: String?
     var password: String?
     
+    //MARK: - UIComponent Part
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordHideButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    
+    //MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationBarCustom()
         
         loginButton.isEnabled = false
 
         passwordTextField.addTarget(self, action: #selector(btnEnable), for: .editingChanged)
     }
     
+    //MARK: - Function Part
     @objc func btnEnable() {
         if passwordTextField.text?.isEmpty == false {
             loginButton.isEnabled = true
@@ -36,13 +38,18 @@ class passwordViewController: UIViewController {
         }
     }
     
+    private func navigationBarCustom() {
+        navigationController?.navigationBar.topItem?.title=""
+    }
+    
+    //MARK: - IBAction Part
     @IBAction func passwordHideButton(_ sender: Any) {
         if passwordTextField.isSecureTextEntry {
-            passwordHideButton.setImage(UIImage(named: "passwordHideEye"), for: .normal)
+            passwordHideButton.setImage(UIImage(named: "passwordShownEye"), for: .normal)
             passwordTextField.isSecureTextEntry = false
         }
         else {
-            passwordHideButton.setImage(UIImage(named: "passwordShownEye"), for: .normal)
+            passwordHideButton.setImage(UIImage(named: "icn_password_hidden"), for: .normal)
             passwordTextField.isSecureTextEntry = true
         }
     }
